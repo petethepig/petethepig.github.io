@@ -7,7 +7,7 @@ title: Dmitry Filimonov's Blog — About
 
 I live in St-Petersburg, Russia. I am an undergrad, pursuing software engineer degree. My passion is programming, especially web-related, and design. I like creating stuff. Check my recent [projects](/projects).
 
-You can reach me on [GitHub](https://github.com/petethepig), [Twitter](https://twitter.com/dmi3f) or [Google +](https://plus.google.com/115336993797323707321). or even email [me-email]([me-email]) – drop me a line sometime.
+You can reach me on [GitHub](https://github.com/petethepig), [Twitter](https://twitter.com/dmi3f) or [Google +](https://plus.google.com/115336993797323707321). My email is [me-email]([me-email]) – drop me a line sometime.
 
 
 <div style='margin:40px auto;text-align:center;overflow:hidden;height:40px;'>
