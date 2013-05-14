@@ -1,0 +1,8 @@
+name: Dmitrii Filimonov's Blog
+pygments: true
+exclude: 
+- deploy.sh
+- preview.sh
+- Gemfile
+- Gemfile.lock
+- Rakefile
