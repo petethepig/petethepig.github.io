@@ -232,7 +232,12 @@ article {
     #articles .article a {
       display: block;
       padding: 15px 0;
-      overflow: hidden; }
+      overflow: hidden;
+      text-decoration: none; }
+      #articles .article a:hover .title {
+        text-decoration: underline; }
+      #articles .article a:hover span.date {
+        text-decoration: none; }
       #articles .article a .date {
         position: absolute;
         right: -5px;
@@ -248,12 +253,10 @@ article {
       #articles .article a .title, #articles .article a .date {
         height: 33px;
         line-height: 33px; }
-      #articles .article a, #articles .article a:visited, #articles .article a:hover, #articles .article a:active {
-        text-decoration: none; }
       #articles .article a, #articles .article a:visited {
-        color: #777777; }
-      #articles .article a:hover, #articles .article a:active {
         color: #222222; }
+      #articles .article a:hover, #articles .article a:active {
+        color: #ff4466; }
 
 img.emoji {
   display: inline;
