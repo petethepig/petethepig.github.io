@@ -1,0 +1,176 @@
+@import mixins.sass
+@import typography.sass
+
+body
+  background-color: #393939
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAR0lEQVR42oXOsQkAQQhE0StKRQ20/6o8RjBZcDd40R/ELyIKVLUxc9uDuxfMgIjgEsysQERaZsIlnCdmuId5bwbvcJyYwR5+DGh4DQAjsYAAAAAASUVORK5CYII=)
+
+
+#wrapper-1
+  position: absolute
+  height: 100%
+  width: 100%
+  #wrapper-2
+    height: 100%
+    margin: 0 auto
+    max-width: $max-width
+    padding: 0 $content-margin
+    #wrapper-3
+      min-height: 100%
+      background: white
+      overflow: hidden
+      +box-shadow(0 0 10px rgba(0, 0, 0, 0.3))
+      //border-left: 3px solid $text-color
+      //border-right: 3px solid $text-color
+
+
+.container
+  margin-left: 15%
+  margin-right: 15%
+
+header
+  color: $text-color
+  +user-select(text)
+  overflow: hidden
+  #dmitry
+    a
+      &,&:hover,&:active,&:visited
+        text-decoration: none
+        color: $text-color
+      &:hover
+        color: $main-color
+  p
+    color: $text-color-2
+
+  #border
+    background: transparent
+    border-bottom: 1px dashed black
+
+footer
+  text-align: center
+  color: $text-color-2
+  a
+    color: inherit
+
+#article-title
+  //color: $main-color
+
+article
+  position: relative
+  +user-select(text)
+  #article-date
+    color: $text-color-2
+    a
+      color: inherit
+    a:hover,a:active
+      color: $links-hover
+#social
+  height: 26px
+  overflow: hidden
+  .social-button
+    display: inline-block
+    width: 100px
+#comments
+  min-height: 305px
+
+#navigation
+  color: $text-color-2
+  #next-post, #prev-post
+    width: 50%
+    a
+      display: block
+      overflow: hidden
+      white-space: pre
+      text-overflow: ellipsis
+  #next-post
+    text-align: right
+    float: right
+  #prev-post
+    float: left
+
+#articles
+  display: block
+  margin: 0
+  padding: 0
+  $padding: 0
+  .article
+    display: block
+    margin: 0
+    padding: 0
+    position: relative
+    a
+      display: block
+      padding: 15px $padding
+      overflow: hidden
+      text-decoration: none
+      &:hover .title
+        text-decoration: underline
+      &:hover span.date
+        text-decoration: none
+      .date
+        position: absolute
+        right: -5px
+        padding-right: $padding + 5px
+        top: 18px
+      .title
+        font-weight: 300
+        font-size: 1.7em
+        width: 85%
+        overflow: hidden
+        white-space: pre
+        text-overflow: ellipsis
+      .title,.date
+        height: 33px
+        line-height: 33px
+      &,&:visited
+        color: $text-color
+      &:hover,&:active
+        color: $main-color
+
+img.emoji
+  display: inline
+  width: 20px
+  height: 20px
+  vertical-align: text-bottom
+
+
+.divider
+  background-image: url(/assets/apple-touch-icon-72x72-precomposed.png) 
+  background-size: 100%
+  width: 36px  
+  height: 36px
+  margin: 20px auto
+
+
+.clear-fix
+  clear: both
+
+
+header
+  margin-top: 40px
+#dmitry
+  margin: 0 0 0.25em
+#border
+  margin-top: 40px
+section
+  margin-top: 40px
+#article-title
+  margin: 0 0 20px
+#article-date
+  margin-bottom: 40px
+#article-body
+  margin-bottom: 40px
+#social
+  margin-bottom: 40px
+#navigation
+  margin-bottom: 40px
+#comments
+  margin-bottom: 40px
+footer
+  margin: 40px 0
+
+
+@import responsive.sass
+@import syntax.scss
+
+

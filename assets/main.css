@@ -9,13 +9,7 @@ a {
   transition: color 0.17s ease-out; }
 
 body {
-  font: 300 16px/1.65 "rooney-web";
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none; }
+  font: 300 16px/1.65 "rooney-web"; }
 
 html, body, div, ul, li {
   padding: 0;
@@ -89,7 +83,10 @@ img {
 
 .highlight {
   overflow: auto;
-  margin-bottom: 17px; }
+  margin-bottom: 15px; }
+
+h1 + .highlight, h2 + .highlight, h3 + .highlight, h4 + .highlight, h5 + .highlight, h6 + .highlight, p + .highlight {
+  margin-top: -10px; }
 
 pre, code, tt {
   font-size: 14px;
@@ -100,7 +97,7 @@ pre, code, tt {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border: 1px solid #bbbbbb; }
+  border: 1px solid #dddddd; }
 
 pre {
   padding: 8px 8px 5px; }
@@ -146,9 +143,9 @@ body {
       min-height: 100%;
       background: white;
       overflow: hidden;
-      -webkit-box-shadow: 0 0 6px rgba(25, 25, 25, 0.3);
-      -moz-box-shadow: 0 0 6px rgba(25, 25, 25, 0.3);
-      box-shadow: 0 0 6px rgba(25, 25, 25, 0.3); }
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .container {
   margin-left: 15%;

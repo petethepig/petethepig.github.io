@@ -1,0 +1,51 @@
+$main-color: #ff4d00 //orange
+$main-color: #ff4466 //pink
+
+$selection-color: #111111
+$selection-text-color: #ffffff
+
+$links: #3388ff
+$links: $main-color
+$links-hover: darken($links,30%)
+//$links-hover: darken($main-color, 30%)
+
+$text-color: #222222
+$text-color-2: #777777
+$text-color-3: #bbbbbb
+$text-color-4: #eeeeee
+
+$header-width: 0
+$content-margin: 55px
+$max-width: 1100px
+
+// nice, free one
+//@import url("http://fonts.googleapis.com/css?family=Istok+Web:400,700")
+//@import url("http://fonts.googleapis.com/css?family=Lora:700")
+  
+
+=user-select($val: none)
+  -webkit-user-select: $val
+  -khtml-user-select: $val
+  -moz-user-select: $val
+  -ms-user-select: $val
+  -o-user-select: $val
+  user-select: $val
+
+=border-radius($val)
+  -webkit-border-radius: $val
+  -moz-border-radius: $val
+  border-radius: $val
+
+=box-shadow($val)
+  -webkit-box-shadow: $val
+  -moz-box-shadow: $val
+  box-shadow: $val
+
+=text-shadow($val)
+  -webkit-text-shadow: $val
+  -moz-text-shadow: $val
+  text-shadow: $val
+
+=selection
+  background: $selection-color
+  color: $selection-text-color

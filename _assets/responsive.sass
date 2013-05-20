@@ -1,0 +1,72 @@
+
+@media (max-width: 1000px)
+  $margin: 5%
+    
+  .container
+    margin-left: $margin
+    margin-right: $margin
+
+  body
+    font-size: 14px
+  #wrapper-1
+    #wrapper-2
+      #wrapper-3
+        +box-shadow(none)
+      margin: 0
+      padding: 0
+
+
+  body
+    background: white
+  ul li
+    list-style-position: inside
+  ul#articles
+    $padding: 0
+    li.article
+      list-style-position: outside
+      &:first-child a
+        border-top: none
+      a
+        padding: 10px 0
+        border-top: 1px solid $text-color-3
+        .title
+          width: 100%
+          font-size: 1.35em
+          word-spacing: default
+        .title,span.date
+          position: static
+          height: 1.25em
+          line-height: 1.25em
+
+        span.date
+          padding-right: $padding + 5px
+          top: 12px
+          right: -5px
+  img
+    max-width: 100%
+    float: none !important
+    margin: 0 auto 20px !important
+  blockquote
+    padding-left: 30px
+
+
+  header
+    margin-top: 20px
+  #border
+    margin-top: 20px
+  section
+    margin-top: 20px
+  #article-title
+    margin: 0 0 20px
+  #article-date
+    margin-bottom: 20px
+  #article-body
+    margin-bottom: 20px
+  #social
+    margin-bottom: 20px
+  #navigation
+    margin-bottom: 20px
+  #comments
+    margin-bottom: 20px
+  footer
+    margin: 20px 0
