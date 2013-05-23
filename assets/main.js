@@ -96,7 +96,10 @@ $(document).ready(function(){
     var href = $(this).attr("href");
     email = href.replace(/^\[([a-z0-9]+)-email\]$/,"$1@dfilimonov.com");
     if(email != href){
-      $(this).attr("href","mailto:"+email).text(email);
+      $(this).attr("href","mailto:"+email);
+      if($(this).text()=="@"){
+        $(this).text(email);
+      }
     }
   });
 

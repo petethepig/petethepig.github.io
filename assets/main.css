@@ -132,6 +132,20 @@ body {
   background-color: #393939;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAR0lEQVR42oXOsQkAQQhE0StKRQ20/6o8RjBZcDd40R/ELyIKVLUxc9uDuxfMgIjgEsysQERaZsIlnCdmuId5bwbvcJyYwR5+DGh4DQAjsYAAAAAASUVORK5CYII=); }
 
+@font-face {
+  font-family: "entyporegular";
+  src: url("./entypo/entypo-webfont.eot");
+  src: url("./entypo/entypo-webfont.eot?#iefix") format("embedded-opentype"), url("./entypo/entypo-webfont.woff") format("woff"), url("./entypo/entypo-webfont.ttf") format("truetype"), url("./entypo/entypo-webfont.svg#entyporegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "entypo_socialregular";
+  src: url("./entypo-social/entypo-social-webfont.eot");
+  src: url("./entypo-social/entypo-social-webfont.eot?#iefix") format("embedded-opentype"), url("./entypo-social/entypo-social-webfont.woff") format("woff"), url("./entypo-social/entypo-social-webfont.ttf") format("truetype"), url("./entypo-social/entypo-social-webfont.svg#entypo_socialregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 #wrapper-1 {
   position: absolute;
   height: 100%;
@@ -305,6 +319,33 @@ section {
 
 footer {
   margin: 40px 0; }
+
+#social-buttons {
+  margin: 0 auto;
+  text-align: center; }
+  #social-buttons .social-button {
+    text-align: center;
+    font-family: "entypo_socialregular";
+    font-size: 120px;
+    margin: 0 5px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none; }
+    #social-buttons .social-button:nth-child(1) {
+      color: #00bbf2; }
+      #social-buttons .social-button:nth-child(1):hover {
+        color: #006c8c; }
+    #social-buttons .social-button:nth-child(2) {
+      color: #333333; }
+      #social-buttons .social-button:nth-child(2):hover {
+        color: black; }
+    #social-buttons .social-button:nth-child(3) {
+      color: #dc4a36; }
+      #social-buttons .social-button:nth-child(3):hover {
+        color: #92281a; }
 
 @media (max-width: 1000px) {
   .container {
