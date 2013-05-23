@@ -1,3 +1,4 @@
+@charset "UTF-8";
 strong {
   font-weight: 500; }
 
@@ -79,7 +80,8 @@ hr {
 
 img {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 .highlight {
   overflow: auto;
@@ -347,7 +349,6 @@ footer {
         right: -5px; }
 
   img {
-    max-width: 100%;
     float: none !important;
     margin: 0 auto 20px !important; }
 
@@ -637,3 +638,76 @@ footer {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+.img-wrapper {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+  position: relative; }
+
+#modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #111111;
+  background: rgba(0, 0, 0, 0.75);
+  background: -webkit-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -moz-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
+  display: none;
+  opacity: 0;
+  -moz-transition: opacity 0.25s ease-out;
+  -webkit-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out; }
+  #modal-background.fade-in {
+    opacity: 1; }
+
+#modal-panel {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  background: white;
+  padding: 0px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  display: none;
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out, -o-transform 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out, -moz-transform 0.25s ease-out;
+  -webkit-transition: opacity 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5); }
+  #modal-panel.fade-in {
+    opacity: 1;
+    transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1); }
+  #modal-panel #modal-close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    opacity: 0.6; }
+    #modal-panel #modal-close-btn:hover {
+      opacity: 1; }
+    #modal-panel #modal-close-btn:before {
+      content: "×"; }
+  #modal-panel #modal-content img {
+    width: 100%;
+    height: 100%; }
