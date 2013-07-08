@@ -5,7 +5,7 @@ title: Dmitry Filimonov's Blog — Projects
 #My Projects
 
 [ ![Thunder](/assets/thunder.png) ](https://thunderapp.me/)
-[ ![FeatureBox](/assets/featurebox.png) ](http://featurebox.me/)
+![FeatureBox](/assets/featurebox.png)
 [ ![GitHub Markup Preview](/assets/preview.png) ](http://dfilimonov.com/github-markup-preview)
 [ ![1x1px](/assets/1x1px.png) ](http://1x1px.me/)
 
