@@ -8,14 +8,15 @@ tags:
 - rails
 ---
 
+> This post is outdated as I recently switched from Enki to Jekyll and GitHub Pages. 27 Aug, 2013
 
 I've just finished making a new look for my blog. I am going to tell you a little bit about what's under the hood – about the blogging app I'm using, server configuration and all that.
 
 > Preferences are for the masses. Any real coder knows the easiest and best way to customize something is by *hacking code*. <br> From Enki's website
 
-I am using [Enki](http://www.enkiblog.com/). It is super smart, light and thin – perfect choice for a guy like me. The code is clear and easily customizable. I wish I could say this about Wordpress :smile:.
+I am using [Enki](http://www.enkiblog.com/). It is super smart, light and thin – perfect choice for a guy like me. The code is clear and easily customizable. I wish I could say this about Wordpress.
 
-* I added [Markdown](http://daringfireball.net/projects/markdown/) and [Emoji](http://www.emoji-cheat-sheet.com/) support :dog:
+* I added [Markdown](http://daringfireball.net/projects/markdown/) and [Emoji](http://www.emoji-cheat-sheet.com/) support
 * replaced native comments with [Disqus](http://disqus.com/)
 * added links to previous and next posts
 * put some design
