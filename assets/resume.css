@@ -1,0 +1,78 @@
+/*
+Syntax error: Undefined variable: "$text-color".
+        on line 33 of _assets/resume.sass
+
+28:   h3, .item, .top-right
+29:     padding: 0 3px
+30: 
+31:   h3
+32:     text-transform: uppercase
+33:     border-top: 1px solid $text-color
+34:     font-size: 1.4em
+35:     margin: 1em 0 0.5em
+36:     padding-top: 2px
+37:     letter-spacing: 2px
+38:   
+
+Backtrace:
+_assets/resume.sass:33
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `block in _perform'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `map'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/list.rb:70:in `_perform'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/dmitry/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$text-color\".\A         on line 33 of _assets/resume.sass\A \A 28:   h3, .item, .top-right\A 29:     padding: 0 3px\A 30: \A 31:   h3\A 32:     text-transform: uppercase\A 33:     border-top: 1px solid $text-color\A 34:     font-size: 1.4em\A 35:     margin: 1em 0 0.5em\A 36:     padding-top: 2px\A 37:     letter-spacing: 2px\A 38:   "; }

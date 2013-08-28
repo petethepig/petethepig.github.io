@@ -2,7 +2,7 @@
 layout: default
 title: Dmitry Filimonov's Blog — Projects
 ---
-#My Projects
+##My Projects
 
 [ ![Thunder](/assets/thunder.png) ](https://thunderapp.me/)
 ![FeatureBox](/assets/featurebox.png)
@@ -11,11 +11,10 @@ title: Dmitry Filimonov's Blog — Projects
 
 <div style="height:50px;">&nbsp;</div>
 
-##Couple more
+####Couple more
 
-####This website 
-[GitHub](https://github.com/petethepig/petethepig.github.io)
-####Marmot — Unofficial Font Squirrel Webfont Generator Client 
-[GitHub](https://github.com/petethepig/marmot)
-####Emoji 4 Rails — ruby gem 
-[GitHub](https://github.com/petethepig/emoji4rails)
+This website ([GitHub](https://github.com/petethepig/petethepig.github.io))
+
+Marmot — Unofficial Font Squirrel Webfont Generator Client ([GitHub](https://github.com/petethepig/marmot))
+
+Emoji 4 Rails — ruby gem ([GitHub](https://github.com/petethepig/emoji4rails))

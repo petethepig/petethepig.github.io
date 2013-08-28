@@ -1,0 +1,114 @@
+.resume-body
+  background: white
+.resume 
+  margin: 0
+  padding: 0 0 100px
+  line-height: 1.7
+  .container
+    width: 700px
+    margin: 0 auto !important
+    padding-top: 50px
+    position: relative
+  h1
+    text-transform: uppercase
+    letter-spacing: 5px
+    text-align: center
+    margin: 0 0 25px
+    line-height: 1
+  h2
+    font-size: 1em
+    font-weight: 300
+    text-align: center
+    margin: 0 0 50px
+    line-height: 1
+  .address
+  .email
+    text-transform: uppercase
+
+  h3, .item, .top-right
+    padding: 0 3px
+
+  h3
+    text-transform: uppercase
+    border-top: 1px solid $text-color
+    font-size: 1.4em
+    margin: 1em 0 0.5em
+    padding-top: 2px
+    letter-spacing: 2px
+  
+  p
+    font-size: 1em
+
+  a
+  section
+    clear: both
+  .item
+    $w: 150px
+    .left
+      float: left
+      width: $w
+
+    .right
+      $g: 30px
+      margin-left: $w + $g
+      width: 700px - $w - $g - 3px * 2
+      p
+        margin-bottom: 0.33em
+        &:last-child
+          margin-bottom: 1em
+    .tmp
+      text-align: justify
+      overflow-wrap: hyphenate
+      word-wrap: break-word
+      -webkit-hyphens: auto
+      -webkit-hyphenate-character: "\2010"
+      -webkit-hyphenate-limit-after: 1
+      -webkit-hyphenate-limit-before: 3
+
+  .top-right
+    position: absolute
+    top: 0
+    right: 0
+  section
+    margin-top: 0
+
+.underlined
+  text-decoration: underline
+  color: $text-color
+  &:hover
+    color: $main-color
+
+@media print
+  @page
+    margin: 15mm 25mm 0 25mm
+  
+  h1, h2, h3, h4, h5, h6
+    //font-family: "Helvetica Neue"
+  body 
+    //font-family: "Times New Roman"
+  
+  .resume
+    padding-bottom: 0
+
+  .resume
+    h1
+      margin-bottom: 0.5em
+    h2
+      margin-bottom: 1em
+
+  .resume .container
+    padding-top: 0
+    width: auto
+
+  .top-right
+    display: none
+  a, .underlined
+    color: $text-color
+    text-decoration: none
+  a:link:after, a:visited:after
+    content: " (" attr(href) ") "
+    text-decoration: none
+    color: $main-color
+
+
+
