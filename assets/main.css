@@ -224,7 +224,10 @@ code {
   a:link:after, a:visited:after {
     content: " (" attr(href) ") ";
     text-decoration: none;
-    color: #ff4466; } }
+    color: #aa001f; }
+
+  a.no-brackets:link:after, a.no-brackets:visited:after {
+    content: " " attr(href) " "; } }
 body {
   background-color: #393939;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAR0lEQVR42oXOsQkAQQhE0StKRQ20/6o8RjBZcDd40R/ELyIKVLUxc9uDuxfMgIjgEsysQERaZsIlnCdmuId5bwbvcJyYwR5+DGh4DQAjsYAAAAAASUVORK5CYII=); }

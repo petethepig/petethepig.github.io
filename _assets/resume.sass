@@ -108,7 +108,9 @@
   a:link:after, a:visited:after
     content: " (" attr(href) ") "
     text-decoration: none
-    color: $main-color
+    color: $links-hover
+  a.no-brackets:link:after, a.no-brackets:visited:after
+    content: " " attr(href) " "
 
 
 
