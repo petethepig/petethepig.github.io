@@ -14,7 +14,9 @@ The solution I want to show you is based on JS <-> Flash communication. You can 
 It is not short but it works well in all popular browsers and fully simulate original flash event.
 Thanks to a guy from stackoverflow, I borrowed a good deal of the code from his answer: [http://stackoverflow.com/questions/5485187/mousewheel-in-chrome-y-firefox](http://stackoverflow.com/questions/5485187/mousewheel-in-chrome-y-firefox)
 
-#####JS Part:
+
+JS Part:
+
 {% highlight javascript %}
 if (window.addEventListener) {
     window.addEventListener('DOMMouseScroll', handleWheel,
@@ -41,14 +43,18 @@ function handleWheel(event) {
 }
 {% endhighlight %}
 
-#####AS3. Imports:
+
+AS3. Imports:
+
 {% highlight actionscript %}
 import flash.display.*;
 import flash.events.MouseEvent;
 import flash.external.ExternalInterface;
 import flash.geom.Point;
 {% endhighlight %}
-#####AS3. Add this code to your documentClass constructor:
+
+AS3. Add this code to your documentClass constructor:
+
 {% highlight actionscript %}
 ExternalInterface.addCallback("handleWheel", function(event:Object){
     var obj : InteractiveObject = null;

@@ -1,0 +1,39 @@
+Dmitry Filimonov
+
+me@dfilimonov.com • +7 911 116-95-19 • St. Petersburg, Russia
+
+PROFILE
+
+I am the Founder, Developer and Designer of Thunder (https://thunderapp.me/); Back-end developer at Do You Like It? (http://www.doyoulikeitapp.com/). I like creating stuff for the Web. I spend most of my time hacking on Ruby, JS and Objective C. I participate in the Open Source movement (GitHub: https://github.com/petethepig) and occasionally write in my blog (http://blog.dfilimonov.com/).
+
+SKILLS
+
+I started coding at school. The first programming language I learned was Action Script (Flash). Over the past years I've been working with PHP, Java, Java Script, CSS, C, Ruby and Objective C. My main area of expertise is web development. I have experience in creating RESTful APIs and single-page web apps; optimizing static assets and slow SQL queries.
+
+My practical skills are backed with good academic knowledge. I am well versed in algorithms and data structures, programming paradigms and databases. I have strong understanding of how modern web works, including HTTP, the principles of REST and CRUD.
+
+I am excited about new technologies like Coffee Script and Node.js, and I am eager to learn some new stuff. My philosophy is keeping things simple while being attentive to details. Sometimes I design things, mostly for my own projects.
+
+EDUCATION
+
+Fall 2009 – Present
+Graduating in Summer 2014
+Currently pursuing Specialist degree in Information Technology and Systems at National Research University of Information Technologies, Mechanics and Optics in St-Petersburg, Russia.
+
+EMPLOYMENT
+
+Nov 2012 – Present
+Thunder (https://thunderapp.me/) — File-sharing app and web-service.
+Thunder is a one-man show. I designed and developed the back-end, the front-end and the Mac app. I used Ruby, Objective C, JS and CSS.
+
+Nov 2012 – Present
+Do You Like It? (http://www.doyoulikeitapp.com/) — Instagram-ish iPhone app.
+I designed and developed the API: photos, followers, likes. Everything is pretty much the same like in Instagram.
+
+Aug 2010 – Nov 2012
+Sliday (http://sliday.com/) — a New Zealand based studio, specialized in making web sites and mobile apps.
+A lot of great websites. Flash, HTML5; PHP, Ruby and sometimes Java.
+
+May 2007 – Aug 2010
+Freelance Contracting
+A number of exciting projects, mostly Flash and PHP.
