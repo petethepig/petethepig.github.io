@@ -9,7 +9,7 @@ I live in St-Petersburg, Russia. I am an undergrad, pursuing software engineer d
 
 You can reach me on [GitHub](https://github.com/petethepig), [Twitter](https://twitter.com/dmi3f) or [Google +](https://plus.google.com/115336993797323707321). My email is [@]([me-email]) – drop me a line sometime.
 
-<div id="social-buttons">
+<div class="social-buttons">
 <a class="social-button" href="https://twitter.com/dmi3f">
 
 </a>

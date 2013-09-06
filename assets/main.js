@@ -21,12 +21,12 @@ var Modal = function(){
   var $content = $("#modal-content");
   var $panel = $("#modal-panel");
   var $bg = $("#modal-background");
-  var $bg_panel = $("#modal-background,#modal-panel");
+  var $bg_panel = $("#modal-background, #modal-panel");
   var $close_btn = $("#modal-close-btn");
   var _image = null;
   var _window = null;
 
-  this.resizeHandler = function(){
+  function resizeHandler(){
     _window = {
       w: $(window).width() - 80,
       h: $(window).height() - 80
@@ -69,7 +69,7 @@ var Modal = function(){
       setTimeout(function(){
         $bg_panel.addClass("fade-in");
       },50);
-      this.resizeHandler();
+      resizeHandler();
     }
   };
 
@@ -84,8 +84,8 @@ var Modal = function(){
 
   $bg.click(this.hide);
   $close_btn.click(this.hide);
-  $(window).bind("resize",this.resizeHandler);
-  this.resizeHandler();
+  $(window).bind("resize",resizeHandler);
+  resizeHandler();
 
 };
 

@@ -280,7 +280,6 @@ html, body {
     padding: 0 55px; }
     #wrapper-1 #wrapper-2 #wrapper-3 {
       min-height: 100%;
-      background: white;
       overflow: hidden; }
 
 .container {
@@ -440,10 +439,10 @@ section {
 footer {
   margin: 120px 0 40px; }
 
-#social-buttons {
+.social-buttons {
   margin: 0 auto;
   text-align: center; }
-  #social-buttons .social-button {
+  .social-buttons .social-button {
     text-align: center;
     font-family: "entypo_socialregular";
     font-size: 120px;
@@ -454,17 +453,17 @@ footer {
     display: inline-block;
     cursor: pointer;
     text-decoration: none; }
-    #social-buttons .social-button:nth-child(1) {
+    .social-buttons .social-button:nth-child(1) {
       color: #00bbf2; }
-      #social-buttons .social-button:nth-child(1):hover {
+      .social-buttons .social-button:nth-child(1):hover {
         color: #006c8c; }
-    #social-buttons .social-button:nth-child(2) {
+    .social-buttons .social-button:nth-child(2) {
       color: #333333; }
-      #social-buttons .social-button:nth-child(2):hover {
+      .social-buttons .social-button:nth-child(2):hover {
         color: black; }
-    #social-buttons .social-button:nth-child(3) {
+    .social-buttons .social-button:nth-child(3) {
       color: #dc4a36; }
-      #social-buttons .social-button:nth-child(3):hover {
+      .social-buttons .social-button:nth-child(3):hover {
         color: #92281a; }
 
 @media (max-width: 1000px) {
