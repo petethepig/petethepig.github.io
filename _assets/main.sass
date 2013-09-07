@@ -2,12 +2,9 @@
 @import typography.sass
 @import resume.sass
 
-body
-  //background-color: #393939
-  //background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAR0lEQVR42oXOsQkAQQhE0StKRQ20/6o8RjBZcDd40R/ELyIKVLUxc9uDuxfMgIjgEsysQERaZsIlnCdmuId5bwbvcJyYwR5+DGh4DQAjsYAAAAAASUVORK5CYII=)
-html, body  
-  height: 100%
-
+/**
+ * Entypo Font
+ */
 @font-face
   font-family: 'entyporegular'
   src: url('./entypo/entypo-webfont.eot')
@@ -35,197 +32,188 @@ html, body
 
 
 
-#wrapper-1
+/**
+ * Basic Layout
+ */
+html, body  
+  height: 100%
+
+.wrapper-1
   position: absolute
   height: 100%
   width: 100%
-  #wrapper-2
+  .wrapper-2
     height: 100%
     margin: 0 auto
     max-width: $max-width
     padding: 0 $content-margin
-    #wrapper-3
+    .wrapper-3
       min-height: 100%
       overflow: hidden
-      //+box-shadow(0 0 10px rgba(0, 0, 0, 0.3))
-      //border-left: 3px solid $text-color
-      //border-right: 3px solid $text-color
 
 .container
   margin-left: 15%
   margin-right: 15%
 
-header
-  color: $text-color
-  +user-select(text)
+
+
+
+/**
+ * Usefull utility classes
+ */
+.clear-fix
+  clear: both
+
+.gray-color
+  color: $text-color-2
+
+.align-center
+  text-align: center
+
+.text-overflow-ellipsis
   overflow: hidden
-  #dmitry
+  overflow: -moz-hidden-unscrollable
+  white-space: pre
+  text-overflow: ellipsis
+
+.df
+  background-image: url(/assets/apple-touch-icon-72x72-precomposed.png) 
+  background-size: 100%
+  width: 36px  
+  height: 36px
+  margin: 40px auto
+
+
+
+
+/**
+ * Header
+ */
+header
+  .dmitry
     a
       &,&:hover,&:active,&:visited
         text-decoration: none
         color: $text-color
       &:hover
         color: $main-color
-  p
-    color: $text-color-2
 
-  #border
+  .border
     background: transparent
     border-bottom: 1px dashed black
 
-footer
-  text-align: center
-  color: $text-color-2
-  a
-    color: inherit
 
-#article-title
-  //color: $main-color
 
-article
-  position: relative
-  +user-select(text)
-  #article-date
-    color: $text-color-2
-    a
-      color: inherit
-    a:hover,a:active
-      color: $links-hover
-#social
-  height: 26px
-  overflow: hidden
-  .social-button
-    display: inline-block
-    width: 100px
-#comments
-  min-height: 305px
-
-#navigation
-  color: $text-color-2
-  #next-post, #prev-post
-    width: 50%
-    a
-      display: block
-      overflow: hidden
-      white-space: pre
-      text-overflow: ellipsis
-  #next-post
-    text-align: right
-    float: right
-  #prev-post
-    float: left
-
-#articles
+/**
+ * Index Page
+ */
+.articles
   display: block
   margin: 0
-  padding: 0
-  $padding: 0
   .article
     display: block
     margin: 0
-    padding: 0
-    position: relative
     a
       display: block
-      padding: 15px $padding
-      overflow: hidden
-      text-decoration: none
-      &:hover .title
-        text-decoration: underline
-      &:hover span.date
-        text-decoration: none
-      .date
-        position: absolute
-        right: -5px
-        padding-right: $padding + 5px
-        top: 18px
+      .title, .date
+        display: inline-block
+        vertical-align: baseline
       .title
-        font-weight: 300
-        font-size: 1.7em
         width: 85%
-        overflow: hidden
-        white-space: pre
-        text-overflow: ellipsis
-      .title,.date
-        height: 33px
-        line-height: 33px
-      &,&:visited
+        font-size: 1.7em
+        margin: 0 0 0.75em
+      .date
+        width: 15%
+        text-align: right
+      
+      &
         color: $text-color
+      &:visited
+        color: $text-color-2
       &:hover,&:active
         color: $main-color
-
-img.emoji
-  display: inline
-  width: 20px
-  height: 20px
-  vertical-align: text-bottom
+        .title
+          text-decoration: underline
+        .date
+          text-decoration: none
 
 
-.divider
-  background-image: url(/assets/apple-touch-icon-72x72-precomposed.png) 
-  background-size: 100%
-  width: 36px  
-  height: 36px
-  margin: 20px auto
+
+/**
+ * Next-post, previous-post links
+ */
+.navigation
+  .next-post, .prev-post
+    width: 50%
+    a
+      display: block
+  .next-post
+    text-align: right
+    float: right
+  .prev-post
+    float: left
 
 
-.clear-fix
-  clear: both
 
-
-header
-  margin-top: 40px
-#dmitry
-  margin: 0 0 0.25em
-#border
-  margin-top: 40px
-section
-  margin-top: 40px
-#article-title
-  margin: 0 0 20px
-#article-date
-  margin-bottom: 40px
-#article-body
-  margin-bottom: 40px
-#social
-  margin-bottom: 40px
-#navigation
-  margin-bottom: 40px
-#comments
-  margin-bottom: 40px
-footer
-  margin: (40px * 3) 0 (40px * 1)
-
-
-$social-button-width: 75px
+/**
+ * Social Buttons on the About page
+ */
 .social-buttons
   margin: 0 auto
   text-align: center
-  .social-button
-    text-align: center
-    +entypo-social(120px)
-    margin: 0 5px
-    $h: 70px
-    width: $h
-    height: $h
-    line-height: $h
-    display: inline-block
-    cursor: pointer
-    text-decoration: none
-    &:nth-child(1)
-      color: #00bbf2
-      &:hover
-        color: darken(#00bbf2, 20%)
-    &:nth-child(2)
-      color: #333333
-      &:hover
-        color: darken(#333333, 20%)
-    &:nth-child(3)
-      color: #dc4a36
-      &:hover
-        color: darken(#dc4a36, 20%)
+
+.social-button
+  text-align: center
+  +entypo-social(120px)
+  margin: 0 5px
+  $h: 70px
+  width: $h
+  height: $h
+  line-height: $h
+  display: inline-block
+  cursor: pointer
+  text-decoration: none
+  &:nth-child(1)
+    color: #00bbf2
+    &:hover
+      color: darken(#00bbf2, 20%)
+  &:nth-child(2)
+    color: #333333
+    &:hover
+      color: darken(#333333, 20%)
+  &:nth-child(3)
+    color: #dc4a36
+    &:hover
+      color: darken(#dc4a36, 20%)
 
 
+
+/**
+ * Space between different parts of the page
+ */
+header
+  margin-top: 40px
+.dmitry
+  margin: 0 0 0.25em
+.border
+  margin-top: 40px
+section
+  margin-top: 40px
+.article-title
+  margin: 0 0 20px
+.article-date
+  margin-bottom: 40px
+.article-body
+  margin-bottom: 40px
+.navigation
+  margin-bottom: 40px
+footer
+  margin: (40px * 3) auto (40px * 1)
+
+
+/**
+ * Import everything else
+ */
 @import responsive.sass
 @import syntax.scss
 @import modal.sass

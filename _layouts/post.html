@@ -2,8 +2,8 @@
 layout: default
 ---
 <article>
-<h1 id="article-title">{{ page.title }}</h1>
-<div id="article-date">Posted on {{ page.date | date: "%B %d, %Y" }} 
+<h1 class="article-title">{{ page.title }}</h1>
+<div class="article-date gray-color">Posted on {{ page.date | date: "%B %d, %Y" }} 
   {% if 1 == 2 %}
     in
     {% for tag in page.tags %}
@@ -11,21 +11,21 @@ layout: default
     {% endfor %}
   {% endif %}
 </div>
-<div id="article-body" class="markdown-body">
+<div class="article-body markdown-body">
   {{ content }}
 </div>
 </article>
-<div id="navigation">
-  <div id="prev-post">
+<div class="navigation gray-color">
+  <div class="prev-post ">
     {% if page.previous %}
-      <a rel="prev" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>
+      <a rel="prev" class="text-overflow-ellipsis" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>
     {% else %}
       This is the oldest post
     {% endif %}
   </div>
-  <div id="next-post">
+  <div class="next-post ">
     {% if page.next %}
-      <a rel="prev" href="{{ page.next.url }}">{{ page.next.title }} →</a>
+      <a rel="next" class="text-overflow-ellipsis" href="{{ page.next.url }}">{{ page.next.title }} →</a>
     {% else %}
       This is the latest post
     {% endif %}

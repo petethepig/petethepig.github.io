@@ -18,11 +18,11 @@ function getImageSize(img) {
 
 var Modal = function(){
 
-  var $content = $("#modal-content");
-  var $panel = $("#modal-panel");
-  var $bg = $("#modal-background");
-  var $bg_panel = $("#modal-background, #modal-panel");
-  var $close_btn = $("#modal-close-btn");
+  var $content = $(".modal-content");
+  var $panel = $(".modal-containter");
+  var $bg = $(".modal-background");
+  var $bg_panel = $(".modal-background, .modal-containter");
+  var $close_btn = $(".modal-close-btn");
   var _image = null;
   var _window = null;
 

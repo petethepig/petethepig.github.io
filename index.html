@@ -2,15 +2,14 @@
 layout: default
 title: Dmitry Filimonov's Blog
 ---
-<h1 id="article-title" >Latest Posts:</h1>
-<ul id="articles" >
+<h1 class="article-title" >Latest Posts:</h1>
+<ul class="articles" >
   {% for post in site.posts %}
   <li class="article" >
     <a href="{{ post.url }}"> 
-      <div class="title">{{ post.title }}</div>
-      <span class="date" >{{ post.date | date_to_string }}</span>
+      <div class="title text-overflow-ellipsis">{{ post.title }}</div><div
+       class="date" >{{ post.date | date_to_string }}</div>
     </a>
-    <div class="clear-fix"></div>
   </li>
   {% endfor %}
 </ul>
