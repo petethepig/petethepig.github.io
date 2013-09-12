@@ -24,54 +24,51 @@
   <script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
   <script src='/assets/main.js' type='text/javascript'></script>
 
-  <script>
-    // GA
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-21003876-6']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
 </head>
   
 <body>
-  <div class='wrapper-1'>
-    <div class='wrapper-2'>
-      <div class='wrapper-3'>
 
-        {% unless page.no_header %}
-          <header class="container">
-            <h2 class="dmitry"><a href="/">Dmitry Filimonov</a></h2>
-            <p class="gray-color">I like creating stuff for the Web. Read <a href="/about">more about me</a> and check out <a href="/projects">my projects</a>.</p>
-            <div class='border'></div>
-          </header>
-        {% endunless %}
+  {% unless page.no_header %}
+    <header class="container">
+      <h2 class="dmitry"><a href="/">Dmitry Filimonov</a></h2>
+      <p class="gray-color">I like creating stuff for the Web. Read <a href="/about">more about me</a> and check out <a href="/projects">my projects</a>.</p>
+      <hr class='border'></hr>
+    </header>
+  {% endunless %}
 
-        <section class="container {{ page.section_class }} ">
-          {{ content }}
-        </section>
+  <section class="container {{ page.section_class }} ">
+    {{ content }}
+  </section>
 
 
-        {% unless page.no_footer %}
-          <footer class="container">
-            <div class="copyright gray-color align-center">Copyright © 2012–2013 <a class="gray-color" href="/about">Dmitry Filimonov</a></div>
-          </footer>
-        {% endunless %}
+  {% unless page.no_footer %}
+    <footer class="container">
+      <p class="copyright gray-color align-center">Copyright © 2012–2013 <a class="gray-color" href="/about">Dmitry Filimonov</a></p>
+    </footer>
+  {% endunless %}
 
-      </div>
-    </div>
-  </div>
 
   <div class='modal-background'></div>
   <div class='modal-containter'>
     <div class='modal-close-btn'></div>
     <div class='modal-content'></div>
   </div>
+
+  <script>
+    // GA
+    if(document.location.host != "localhost:4000"){
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21003876-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+
 </body>
 
 </html>

@@ -2,6 +2,161 @@
 @import typography.sass
 @import resume.sass
 
+
+=header-font
+  font: 500 15px/1.3 "rooney-web", Times, "Times New Roman", serif
+=body-font
+  font: 300 16px/1.5 "rooney-web", Times, "Times New Roman", serif
+=monospace-font
+  font: 400 14px/1.4 Consolas, "Liberation Mono", Courier, monospace
+
+strong
+  font-weight: 500
+
+a
+  color: $links
+  &, &:visited
+    text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
+    color: $links-hover
+
+  -webkit-transition: color 0.17s ease-out
+  -moz-transition: color 0.17s ease-out
+  -o-transition: color 0.17s ease-out
+  -ms-transition: color 0.17s ease-out
+  transition: color 0.17s ease-out
+
+body
+  +body-font
+
+html, body, div, ul, li, img
+  padding: 0
+  margin: 0
+  border: 0
+
+h1, h2, h3, h4, h5, h6
+  +header-font
+
+html, body
+  color: $text-color
+  -webkit-font-smoothing: subpixel-antialiased
+
+code
+  color: $text-color
+
+body.black
+  &, header .dmitry a:visited
+    background: $text-color
+    color: #eee
+
+li
+  list-style: square
+
+h1, h2, h3, h4, h5, h6
+  margin: 1.4em 0 0.4em
+p, blockquote,hr,ul,ol,pre
+  margin: 0 0 1.1em
+li
+  margin: 0 0 0.5em
+
+h1
+  font-size: 2.8em
+h2
+  font-size: 2.4em
+h3
+  font-size: 1.5em
+h4
+  font-size: 1.25em
+h5
+  font-size: 1.0em
+h6
+  font-size: 0.8em
+  text-transform: uppercase
+
+
+blockquote
+  font-style: italic
+  font-size: 1.2em
+  line-height: 1.5
+  p
+    border-left: 5px solid $main-color
+    width: auto
+    margin-left: -55px
+    padding-left: 50px
+
+
+
+hr
+  background: $main-color
+  height: 5px
+  border: none
+  margin: 2em 0
+
+img
+  display: block
+  margin: 0 auto
+  max-width: 100%
+
+/**
+ * Source Code
+ */
+pre, code, tt
+  +monospace-font
+
+.highlight, code
+  border: 1px solid #ddd
+  background: #f4f4f4
+
+.highlight
+  overflow: auto
+  margin-bottom: 17px
+  border-left: 0
+  border-right: 0
+
+h1, h2, h3, h4, h5, h6, p
+  + .highlight
+    margin-top: -10px
+
+.highlight pre
+  overflow: auto
+  margin-bottom: 0
+
+
+.highlight code
+  padding: 0
+  border: none
+  box-shadow: none
+
+pre
+  padding: 8px 8px 5px
+
+code
+  +border-radius(3px)
+  padding: 2px 3px 0
+
+
+
+/**
+ * Other
+ */
+.article-body 
+  *:first-child
+    margin-top: 0 !important
+
+.article-body 
+  *:last-child
+    margin-bottom: 0 !important
+
+
+\::selection
+  +selection
+
+\::-moz-selection
+  +selection
+
+
+
 /**
  * Entypo Font
  */
@@ -32,29 +187,16 @@
 
 
 
+
 /**
- * Basic Layout
+ * Layout
  */
-html, body  
-  height: 100%
-
-.wrapper-1
-  position: absolute
-  height: 100%
-  width: 100%
-  .wrapper-2
-    height: 100%
-    margin: 0 auto
-    max-width: $max-width
-    padding: 0 $content-margin
-    .wrapper-3
-      min-height: 100%
-      overflow: hidden
-
-.container
-  margin-left: 15%
-  margin-right: 15%
-
+h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
+.highlight pre
+  width: 90%
+  max-width: $max-width
+  margin-left: auto
+  margin-right: auto
 
 
 
@@ -100,6 +242,7 @@ header
 
   .border
     background: transparent
+    height: 0
     border-bottom: 1px dashed black
 
 
@@ -109,7 +252,7 @@ header
  */
 .articles
   display: block
-  margin: 0
+  margin: 0 auto
   .article
     display: block
     margin: 0
@@ -194,13 +337,13 @@ header
 header
   margin-top: 40px
 .dmitry
-  margin: 0 0 0.25em
+  margin: 0 auto 0.25em
 .border
   margin-top: 40px
 section
   margin-top: 40px
 .article-title
-  margin: 0 0 20px
+  margin: 0 auto 20px
 .article-date
   margin-bottom: 40px
 .article-body
@@ -211,11 +354,11 @@ footer
   margin: (40px * 3) auto (40px * 1)
 
 
+
 /**
  * Import everything else
  */
 @import responsive.sass
 @import syntax.scss
 @import modal.sass
-
 

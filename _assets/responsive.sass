@@ -1,23 +1,9 @@
 
-@media (max-width: 1000px)
-  $margin: 5%
-    
-  .container
-    margin-left: $margin
-    margin-right: $margin
+@media (max-width: $max-width * (100/90) + 55px )
 
   body
     font-size: 14px
-  .wrapper-1
-    .wrapper-2
-      .wrapper-3
-        +box-shadow(none)
-      margin: 0
-      padding: 0
 
-
-  body
-    background: white
   ul li
     list-style-position: inside
   .articles
@@ -40,9 +26,9 @@
   img
     float: none !important
     margin: 0 auto 20px !important
-  blockquote
-    padding-left: 30px
-
+  blockquote p
+    margin-left: 0
+    padding-left: 8%
 
   header
     margin-top: 20px
@@ -51,7 +37,7 @@
   section
     margin-top: 20px
   .article-title
-    margin: 0 0 20px
+    margin: 0 auto 20px
   .article-date
     margin-bottom: 20px
   .article-body
@@ -59,4 +45,4 @@
   .navigation
     margin-bottom: 20px
   footer
-    margin: 20px 0
+    margin: 20px auto

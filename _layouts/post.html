@@ -1,21 +1,15 @@
 ---
 layout: default
+section_class: no-max-width
 ---
 <article>
-<h1 class="article-title">{{ page.title }}</h1>
-<div class="article-date gray-color">Posted on {{ page.date | date: "%B %d, %Y" }} 
-  {% if 1 == 2 %}
-    in
-    {% for tag in page.tags %}
-      <a href="/tags/{{tag}}">#{{tag}}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  {% endif %}
-</div>
-<div class="article-body markdown-body">
-  {{ content }}
-</div>
+  <h1 class="article-title">{{ page.title }}</h1>
+  <p class="article-date gray-color">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
+  <div class="article-body">
+    {{ content }}
+  </div>
 </article>
-<div class="navigation gray-color">
+<section class="navigation gray-color">
   <div class="prev-post ">
     {% if page.previous %}
       <a rel="prev" class="text-overflow-ellipsis" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>
@@ -31,4 +25,4 @@ layout: default
     {% endif %}
   </div>
   <div class="clear-fix"></div>
-</div>
+</section>
