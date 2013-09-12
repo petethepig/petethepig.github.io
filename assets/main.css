@@ -30,6 +30,9 @@
     margin: 1em 0 0.5em;
     padding-top: 2px;
     letter-spacing: 2px; }
+  .resume h1, .resume h2, .resume h3, .resume h4, .resume h5, .resume h6, .resume p, .resume ul, .resume ol, .resume hr, .resume blockquote, .resume .navigation,
+  .resume .highlight pre {
+    width: auto; }
   .resume p {
     font-size: 1em; }
   .resume section {
