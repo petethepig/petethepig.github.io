@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dmitry Filimonov's Blog — Projects
+title: Projects
 ---
 ##My Projects
 

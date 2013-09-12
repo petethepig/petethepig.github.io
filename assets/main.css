@@ -217,7 +217,7 @@ h1 + .highlight, h2 + .highlight, h3 + .highlight, h4 + .highlight, h5 + .highli
   box-shadow: none; }
 
 pre {
-  padding: 8px 8px 5px; }
+  padding: 8px 8px; }
 
 code {
   -webkit-border-radius: 3px;

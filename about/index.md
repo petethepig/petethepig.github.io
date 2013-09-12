@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dmitry Filimonov's Blog — About
+title: About
 ---
 #About Me
 
