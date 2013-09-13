@@ -11,8 +11,8 @@ tags:
 ---
 
 
-<div style="width: 708px; height: 537px; margin: 0 auto; background:url(/assets/images/browser-background.png) no-repeat; position: relative;">
-  <img style="width: 608px; height: 366px; margin: 0; position: absolute; top: 100px; left: 49px; border-radius: 0 0 2px 2px; overflow:hidden;" src="/assets/images/devtools-demo.gif" />
+<div class='gif-wrapper' style="width: 708px; height: 537px; margin: 0 auto; background:url(/assets/images/browser-background.png) no-repeat; position: relative;">
+  <img class='gif' style="width: 608px; height: 366px; margin: 0; position: absolute; top: 100px; left: 49px; border-radius: 0 0 2px 2px; overflow:hidden;" src="/assets/images/devtools-demo.gif" />
 </div>
 
 
@@ -182,9 +182,23 @@ body{
 }
 
 
-@media (max-width: 1000px ){
+@media (max-width: 910.55556px ){
   .ribbon{
     display: none;
+  }
+
+  /* dirty hack for mobile phones */
+  .gif-wrapper{
+    background: transparent !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .gif{
+    width: 90% !important;
+    height: auto !important;
+    position: static !important;
+    margin: 0 auto !important;
+    max-width: 608px !important;
   }
 }
 
