@@ -18,13 +18,12 @@ tags:
 
 #### How do I install it?
 
-First off, you will need to download client-side [Chrome extension](https://chrome.google.com/webstore/detail/leakmhneaibbdapdoienlkifomjceknl) and a server-side [node.js app](https://raw.github.com/petethepig/devtools-terminal/master/backend/remote-terminal.js).
-After you install Chrome extension, put the node.js script in a separate folder on your computer or remote server. 
-Install [Node.js runtime](http://nodejs.org/) if you didn't do so already. 
+First off, you will need to download client-side [Chrome extension](https://chrome.google.com/webstore/detail/leakmhneaibbdapdoienlkifomjceknl) and a server-side node.js app.
+After you install Chrome extension, install [Node.js runtime](http://nodejs.org/) if you didn't do so already. 
 
-Install the dependencies:
+Install the app:
 {% highlight bash %}
-npm install socket.io pty.js optimist
+npm install -g devtools-terminal
 {% endhighlight %}
 
 And you're good to go.
@@ -34,7 +33,7 @@ And you're good to go.
 Start the server:
 
 {% highlight bash %}
-node remote-terminal.js 
+devtools-terminal
 {% endhighlight %}
 
 Open Developer Tools *(Win/Linux:* ***F12***; *Mac:* ***Cmd + Opt + I*** *)*, click the "Terminal" tab and connect to the server. 
