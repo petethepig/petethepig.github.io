@@ -15,6 +15,9 @@ tags:
   <img class='gif' style="width: 608px; height: 366px; margin: 0; position: absolute; top: 100px; left: 49px; border-radius: 0 0 2px 2px; overflow:hidden;" src="/assets/images/devtools-demo.gif" />
 </div>
 
+### Important Update!
+
+If you're on Mac, you can now use this thing without Node.js backend. It connects right to your system's terminal and it's awesome! If you're on some other unix-compatible system, please, [help me port it](https://github.com/petethepig/devtools-terminal/tree/master/native-src).
 
 #### How do I install it?
 
@@ -81,6 +84,8 @@ Passwords are not stored on the client, but they are transmitted in plain text. 
 
 [Christopher Jeffrey](https://github.com/chjj) for his [term.js](https://github.com/chjj/term.js) library which is awesome.
 
+#### If you like it 
+I encourage you to [follow me on Twitter](https://twitter.com/dmi3f) and [GitHub](https://github.com/petethepig)
 
 
 <style>
