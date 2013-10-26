@@ -1,37 +1,38 @@
 ---
 layout: default
-title: Remote Terminal in Chrome Devtools
+title: Terminal in Chrome Devtools
 date: 2013-09-12 17:35
 no_header: true
 tags: 
 - programming
 ---
 
-## Remote Terminal in Chrome Devtools
+## Terminal in Chrome Devtools
 ---
 
 
 <div class='gif-wrapper' style="width: 708px; height: 537px; margin: 0 auto; background:url(/assets/images/browser-background.png) no-repeat; position: relative;">
   <img class='gif' style="width: 608px; height: 366px; margin: 0; position: absolute; top: 100px; left: 49px; border-radius: 0 0 2px 2px; overflow:hidden;" src="/assets/images/devtools-demo.gif" />
 </div>
-
+<!--
 ### Important Update!
 
-If you're on Mac, you can now use this thing without Node.js backend. It connects right to your system's terminal and it's awesome! If you're on some other unix-compatible system, please, [help me port it](https://github.com/petethepig/devtools-terminal/tree/master/native-src).
+If you're on Mac, you can now use this thing *without Node.js backend*. It connects right to your system's terminal and it's awesome! If you're on some other unix-compatible system, please, [help me port it](https://github.com/petethepig/devtools-terminal/tree/master/native-src).
 
+-->
 #### How do I install it?
 
-First off, you will need to download client-side [Chrome extension](https://chrome.google.com/webstore/detail/leakmhneaibbdapdoienlkifomjceknl) and a server-side node.js app.
-After you install Chrome extension, install [Node.js runtime](http://nodejs.org/) if you didn't do so already. 
+*If you're on a Mac*, just download this [Chrome extension](https://chrome.google.com/webstore/detail/leakmhneaibbdapdoienlkifomjceknl). Install it, and you good to go.
+<br>No need to read any further.
+
+#### Oh, but I am not on a Mac
+
+*If you're not on a Mac*, you can connect to your system's terminal via Node.js proxy. It can be localhost or some other remote server.
 
 Install the app:
 {% highlight bash %}
 npm install -g devtools-terminal
 {% endhighlight %}
-
-And you're good to go.
-
-#### What's next?
 
 Start the server:
 
@@ -43,7 +44,7 @@ Open Developer Tools *(Win/Linux:* ***F12***; *Mac:* ***Cmd + Opt + I*** *)*, cl
 The default port is `8080`.
 
 
-#### Okay, how do I configure it?
+##### Okay, how do I configure it?
 
 Here is the default configuration:
 
@@ -68,7 +69,7 @@ remote-terminal.js --config /path/to/config.js
 If you want something custom, I encourage you to check out the [server's source code](https://raw.github.com/petethepig/devtools-terminal/master/backend/remote-terminal.js), it is a very simple Node.js app.
 
 
-#### Security
+##### Security
 
 Passwords are not stored on the client, but they are transmitted in plain text. So if you want to use it in production environment, I strongly recommend you to use HTTPS.
 
