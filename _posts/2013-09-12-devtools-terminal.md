@@ -63,10 +63,10 @@ exports.config = {
 This is a JavaScript file. You can pass your config like this:
 
 {% highlight bash %}
-remote-terminal.js --config /path/to/config.js 
+devtools-terminal --config /path/to/config.js 
 {% endhighlight %}
 
-If you want something custom, I encourage you to check out the [server's source code](https://raw.github.com/petethepig/devtools-terminal/master/backend/remote-terminal.js), it is a very simple Node.js app.
+If you want something custom, I encourage you to check out the [server's source code](https://raw.github.com/petethepig/devtools-terminal/master/backend/bin/devtools-terminal), it is a very simple Node.js app.
 
 
 ##### Security
