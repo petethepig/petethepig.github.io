@@ -318,16 +318,19 @@ header .border {
     margin: 0; }
     .articles .article a {
       display: block; }
-      .articles .article a .title, .articles .article a .date {
+      .articles .article a .title, .articles .article a .date-wrapper {
+        font-size: 1.7em;
         display: inline-block;
-        vertical-align: baseline; }
+        vertical-align: top;
+        height: 100%; }
       .articles .article a .title {
         width: 85%;
-        font-size: 1.7em;
         margin: 0 0 0.75em; }
-      .articles .article a .date {
+      .articles .article a .date-wrapper {
         width: 15%;
         text-align: right; }
+      .articles .article a .date {
+        font-size: 0.58824em; }
       .articles .article a {
         color: #222222; }
       .articles .article a:visited {
@@ -427,14 +430,14 @@ footer {
   .articles .article a {
     padding: 10px 0;
     border-top: 1px solid #bbbbbb; }
-    .articles .article a .title, .articles .article a .date {
-      line-height: 1.25; }
+    .articles .article a .title, .articles .article a .date-wrapper {
+      line-height: 1;
+      width: 100%; }
     .articles .article a .title {
-      width: 100%;
       font-size: 1.35em;
       word-spacing: default;
       margin: 0; }
-    .articles .article a .date {
+    .articles .article a .date-wrapper {
       text-align: left; }
 
   img {

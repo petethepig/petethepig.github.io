@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
   <li class="article" >
     <a href="{{ post.url }}"> 
-      <div class="title text-overflow-ellipsis">{{ post.title }}</div><div class="date">{{ post.date | date_to_string }}</div>
+      <span class="title text-overflow-ellipsis">{{ post.title }}</span><span class="date-wrapper"><span class="date">{{ post.date | date_to_string }}</span></span>
     </a>
   </li>
   {% endfor %}

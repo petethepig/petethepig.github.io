@@ -258,16 +258,19 @@ header
     margin: 0
     a
       display: block
-      .title, .date
+      .title, .date-wrapper
+        font-size: 1.7em
         display: inline-block
-        vertical-align: baseline
+        vertical-align: top
+        height: 100%
       .title
         width: 85%
-        font-size: 1.7em
         margin: 0 0 0.75em
-      .date
+      .date-wrapper
         width: 15%
         text-align: right
+      .date
+        font-size: (1 / 1.7) * 1em
       
       &
         color: $text-color
