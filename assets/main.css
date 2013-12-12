@@ -101,6 +101,9 @@
 strong {
   font-weight: 500; }
 
+strong {
+  font-weight: 500; }
+
 a {
   color: #ff4466;
   -webkit-transition: color 0.17s ease-out;
@@ -115,7 +118,7 @@ a {
     color: #aa001f; }
 
 body {
-  font: 300 16px/1.5 "rooney-web", Times, "Times New Roman", serif; }
+  font: 300 18px/1.8 "rooney-web", Times, "Times New Roman", serif; }
 
 html, body, div, ul, li, img {
   padding: 0;
@@ -138,6 +141,8 @@ body.black, body.black header .dmitry a:visited {
 
 li {
   list-style: square; }
+  li p {
+    margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1.4em 0 0.4em; }
@@ -149,33 +154,32 @@ li {
   margin: 0 0 0.5em; }
 
 h1 {
-  font-size: 2.8em; }
+  font-size: 2.38em; }
 
 h2 {
-  font-size: 2.4em; }
+  font-size: 2.04em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.275em; }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.0625em; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 0.85em; }
 
 h6 {
-  font-size: 0.8em;
+  font-size: 0.68em;
   text-transform: uppercase; }
 
 blockquote {
   font-style: italic;
-  font-size: 1.2em;
-  line-height: 1.5; }
+  font-size: 1.1em; }
   blockquote p {
     border-left: 5px solid #ff4466;
     width: auto;
-    margin-left: -55px;
-    padding-left: 50px; }
+    margin-left: -20px;
+    padding-left: 15px; }
 
 hr {
   background: #ff4466;
@@ -192,7 +196,7 @@ img {
  * Source Code
  */
 pre, code, tt {
-  font: 400 14px/1.4 Consolas, "Liberation Mono", Courier, monospace; }
+  font: 400 15px/1.4 Consolas, "Liberation Mono", Courier, monospace; }
 
 .highlight, code {
   border: 1px solid #dddddd;
