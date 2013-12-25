@@ -1,21 +1,18 @@
-
 @media (max-width: $max-width * (100/90) + 55px )
 
   body
-    font-size: 14px
+    font-size: 16px
 
   ul li
     list-style-position: inside
+
   .articles
-    $padding: 0
     .article
-      &:first-child a
-        border-top: none
       a
         padding: 10px 0
         border-top: 1px solid $text-color-3
         .title, .date-wrapper
-          line-height: 1
+          line-height: 1.25
           width: 100%
         .title
           font-size: 1.35em
@@ -23,12 +20,19 @@
           margin: 0
         .date-wrapper
           text-align: left
+
   img
     float: none !important
     margin: 0 auto 20px !important
+
   blockquote p
     margin-left: 0
     padding-left: 8%
+
+  .home
+    top: 20px
+    left: 5%
+    position: absolute
 
   header
     margin-top: 20px
@@ -46,3 +50,22 @@
     margin-bottom: 20px
   footer
     margin: 20px auto
+
+  header
+    margin-top: 20px
+  .border
+    margin-top: 20px
+  section
+    margin-top: 30px * 2.5
+  .articles
+    margin-top: 20px
+  .article-title
+    margin: 0 auto 20px
+  .article-date
+    margin-bottom: 20px
+  .article-body
+    margin-bottom: 20px
+  .navigation
+    margin-bottom: 20px
+  footer
+    margin: (20px * 3) auto (20px * 1)

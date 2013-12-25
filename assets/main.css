@@ -101,9 +101,6 @@
 strong {
   font-weight: 500; }
 
-strong {
-  font-weight: 500; }
-
 a {
   color: #ff4466;
   -webkit-transition: color 0.17s ease-out;
@@ -118,7 +115,8 @@ a {
     color: #aa001f; }
 
 body {
-  font: 300 18px/1.8 "rooney-web", Times, "Times New Roman", serif; }
+  font: 300 19px/1.7 "rooney-web", Times, "Times New Roman", serif;
+  letter-spacing: 0.1px; }
 
 html, body, div, ul, li, img {
   padding: 0;
@@ -126,7 +124,8 @@ html, body, div, ul, li, img {
   border: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font: 500 15px/1.3 "rooney-web", Times, "Times New Roman", serif; }
+  font: 700 22px/1.3 "freight-text-pro", Times, "Times New Roman", serif;
+  letter-spacing: 0.5px; }
 
 html, body {
   color: #222222;
@@ -154,22 +153,22 @@ li {
   margin: 0 0 0.5em; }
 
 h1 {
-  font-size: 2.38em; }
+  font-size: 2.8em; }
 
 h2 {
-  font-size: 2.04em; }
+  font-size: 2.4em; }
 
 h3 {
-  font-size: 1.275em; }
+  font-size: 1.5em; }
 
 h4 {
-  font-size: 1.0625em; }
+  font-size: 1.25em; }
 
 h5 {
-  font-size: 0.85em; }
+  font-size: 1em; }
 
 h6 {
-  font-size: 0.68em;
+  font-size: 0.8em;
   text-transform: uppercase; }
 
 blockquote {
@@ -199,8 +198,8 @@ pre, code, tt {
   font: 400 15px/1.4 Consolas, "Liberation Mono", Courier, monospace; }
 
 .highlight, code {
-  border: 1px solid #dddddd;
-  background: #f4f4f4; }
+  border: 1px solid #eeeeee;
+  background: #fafafa; }
 
 .highlight {
   overflow: auto;
@@ -232,10 +231,9 @@ code {
 /*
  * Other
  */
-.article-body *:first-child {
+.article-body > *:first-child {
   margin-top: 0 !important; }
-
-.article-body *:last-child {
+.article-body > *:last-child {
   margin-bottom: 0 !important; }
 
 ::selection {
@@ -269,13 +267,14 @@ code {
 h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
 .highlight pre {
   width: 90%;
-  max-width: 770px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto; }
 
 /*
  * Usefull utility classes
  */
+.clearfix,
 .clear-fix {
   clear: both; }
 
@@ -301,12 +300,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
 /*
  * Header
  */
-header .dmitry a, header .dmitry a:hover, header .dmitry a:active, header .dmitry a:visited {
+.dmitry a, .dmitry a:hover, .dmitry a:active, .dmitry a:visited {
   text-decoration: none;
   color: #222222; }
-header .dmitry a:hover {
+.dmitry a:hover {
   color: #ff4466; }
-header .border {
+
+.border {
   background: transparent;
   height: 0;
   border-bottom: 1px dashed black; }
@@ -314,6 +314,10 @@ header .border {
 /*
  * Index Page
  */
+.about-index img {
+  width: 300px;
+  float: left; }
+
 .articles {
   display: block;
   margin: 0 auto; }
@@ -323,7 +327,7 @@ header .border {
     .articles .article a {
       display: block; }
       .articles .article a .title, .articles .article a .date-wrapper {
-        font-size: 1.7em;
+        font-size: 1.5em;
         display: inline-block;
         vertical-align: top;
         height: 100%; }
@@ -334,7 +338,7 @@ header .border {
         width: 15%;
         text-align: right; }
       .articles .article a .date {
-        font-size: 0.58824em; }
+        font-size: 0.66667em; }
       .articles .article a {
         color: #222222; }
       .articles .article a:visited {
@@ -390,6 +394,22 @@ header .border {
         color: #92281a; }
 
 /*
+ * Home button
+ */
+.home {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  background-image: url(/assets/home.png); }
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .home {
+    background-image: url(/assets/home@2x.png);
+    background-size: 100%; } }
+/*
  * Space between different parts of the page
  */
 header {
@@ -402,10 +422,13 @@ header {
   margin-top: 40px; }
 
 section {
-  margin-top: 40px; }
+  margin-top: 100px; }
+
+.articles {
+  margin-top: 20px; }
 
 .article-title {
-  margin: 0 auto 20px; }
+  margin: 40px auto 20px; }
 
 .article-date {
   margin-bottom: 40px; }
@@ -417,25 +440,23 @@ section {
   margin-bottom: 40px; }
 
 footer {
-  margin: 120px auto 40px; }
+  margin: 80px auto 40px; }
 
 /*
  * Import everything else
  */
-@media (max-width: 910.55556px) {
+@media (max-width: 908.33333px) {
   body {
-    font-size: 14px; }
+    font-size: 16px; }
 
   ul li {
     list-style-position: inside; }
 
-  .articles .article:first-child a {
-    border-top: none; }
   .articles .article a {
     padding: 10px 0;
     border-top: 1px solid #bbbbbb; }
     .articles .article a .title, .articles .article a .date-wrapper {
-      line-height: 1;
+      line-height: 1.25;
       width: 100%; }
     .articles .article a .title {
       font-size: 1.35em;
@@ -451,6 +472,11 @@ footer {
   blockquote p {
     margin-left: 0;
     padding-left: 8%; }
+
+  .home {
+    top: 20px;
+    left: 5%;
+    position: absolute; }
 
   header {
     margin-top: 20px; }
@@ -474,7 +500,34 @@ footer {
     margin-bottom: 20px; }
 
   footer {
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  header {
+    margin-top: 20px; }
+
+  .border {
+    margin-top: 20px; }
+
+  section {
+    margin-top: 75px; }
+
+  .articles {
+    margin-top: 20px; }
+
+  .article-title {
+    margin: 0 auto 20px; }
+
+  .article-date {
+    margin-bottom: 20px; }
+
+  .article-body {
+    margin-bottom: 20px; }
+
+  .navigation {
+    margin-bottom: 20px; }
+
+  footer {
+    margin: 60px auto 20px; } }
 .highlight .c {
   color: #999988;
   font-style: italic; }
@@ -739,12 +792,7 @@ footer {
   left: 0;
   right: 0;
   z-index: 100;
-  background: #111111;
-  background: rgba(0, 0, 0, 0.75);
-  background: -webkit-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -moz-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -ms-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
-  background: -o-radial-gradient(50% 50%, circle cover, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: white;
   display: none;
   opacity: 0;
   -moz-transition: opacity 0.25s ease-out;
@@ -761,7 +809,6 @@ footer {
   left: 50%;
   background: white;
   padding: 0px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   display: none;
   transition: opacity 0.25s ease-out, transform 0.25s ease-out;
@@ -787,7 +834,7 @@ footer {
     height: 40px;
     line-height: 40px;
     text-align: right;
-    color: white;
+    color: #333333;
     cursor: pointer;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 26px;

@@ -2,12 +2,27 @@
 layout: default
 title: Projects
 ---
-##My Projects
 
-[ ![Thunder](/assets/thunder.png) ](https://thunderapp.me/)
-![FeatureBox](/assets/featurebox.png)
-[ ![GitHub Markup Preview](/assets/preview.png) ](http://dfilimonov.com/github-markup-preview)
-[ ![1x1px](/assets/1x1px.png) ](http://1x1px.me/)
+<center>
+<h1>My Projects</h1>
+</center>
+---
+
+[ ![Devtools Terminal](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/0rdzIh0M5D8/Screenshot%2025%20Dec%202013%2008%3A49%3A25.png) ](https://thunderapp.me/)
+
+&nbsp;
+
+[ ![Thunder](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/PZNdBzoSZ7w/Screenshot%2025%20Dec%202013%2008%3A38%3A04.png) ](https://thunderapp.me/)
+
+<!-- ![FeatureBox](/assets/featurebox.png) -->
+
+&nbsp;
+
+[ ![GitHub Markup Preview](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/W38do5hlSTQ/Screenshot%2025%20Dec%202013%2008%3A38%3A47.png) ](http://dfilimonov.com/github-markup-preview)
+
+&nbsp;
+
+[ ![1x1px](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/ysHL9sOjjLk/Screenshot%2025%20Dec%202013%2008%3A38%3A17.png) ](http://1x1px.me/)
 
 <div style="height:50px;">&nbsp;</div>
 
@@ -16,4 +31,3 @@ title: Projects
 * This website ([GitHub](https://github.com/petethepig/petethepig.github.io))
 * Devtools Terminal ([GitHub](https://github.com/petethepig/devtools-terminal))
 * Marmot — Unofficial Font Squirrel Webfont Generator Client ([GitHub](https://github.com/petethepig/marmot))
-* Emoji 4 Rails — ruby gem ([GitHub](https://github.com/petethepig/emoji4rails))

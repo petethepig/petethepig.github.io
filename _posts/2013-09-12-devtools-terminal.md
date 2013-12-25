@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: post
 title: Terminal in Chrome Devtools
 date: 2013-09-12 17:35
-no_header: true
 tags: 
 - programming
----
-
-## Terminal in Chrome Devtools
 ---
 
 
@@ -97,29 +93,14 @@ body{
 }
 
 .ribbon{
-  position: absolute; 
+  position: fixed; 
   top: 42px;
   width: 200px;
   padding: 1px 0;
   background: #000;
-  color: #eee;
-
-  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.ribbon.left{
-  left: -42px;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.ribbon.right{
   right: -42px;
+  background: #ff4466;
+  color: white;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -145,9 +126,6 @@ body{
 
   border: 1px solid rgba(255,255,255,0.3);
 
-  -moz-text-shadow: 0 0 10px rgba(0,0,0,0.31);
-  -webkit-text-shadow: 0 0 10px rgba(0,0,0,0.31);
-  text-shadow: 0 0 10px rgba(0,0,0,0.31);
 }
 
 .ribbon.black{
@@ -156,6 +134,9 @@ body{
 
 .ribbon.red{
   background: #c00;
+}
+
+.ribbon.pink{
 }
 
 .ribbon.blue{
@@ -208,6 +189,6 @@ body{
 }
 
 </style>
-<div class="ribbon right red">
+<div class="ribbon pink">
   <a href="https://github.com/petethepig/devtools-terminal">Fork me on GitHub</a>
 </div>

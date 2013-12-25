@@ -1,21 +1,3 @@
-function getImageSize(img) {
-    var oWidth = img.width();
-    var oHeight = img.height();
-
-    img.css('width', 'auto');
-    img.css('height', 'auto');
-
-    var rVal = {};
-    rVal.width = img.width();
-    rVal.height = img.height();
-
-
-    img.css('width', oWidth);
-    img.css('height', oHeight);
-
-    return rVal;
-}
-
 var Modal = function(){
 
   var $content = $(".modal-content");
@@ -40,7 +22,6 @@ var Modal = function(){
       }
 
       k = Math.min(1, 1/k);
-      console.log(k);
 
       $panel.css({
         width:  _image.w*k,
@@ -48,7 +29,6 @@ var Modal = function(){
         left:   (_window.w - _image.w*k)/2 + 40,
         top:    (_window.h - _image.h*k)/2 + 40
       });
-
     }
   };
 
@@ -59,7 +39,6 @@ var Modal = function(){
       w:   img.width,
       h:   img.height
     }
-    console.log(_window.w/_image.w, _image.w, _window.w);
     if(_window.w/_image.w < 0.5 || _window.h/_image.h < 0.5){
       window.open($(img).attr('src'), "_blank");
     }else{
@@ -79,12 +58,12 @@ var Modal = function(){
       $bg_panel.hide();
       $(_image.img).remove();
       $("body").css("overflow","auto");
-    },500);
+    }, 500);
   };
 
-  $bg.click(this.hide);
+  $bg_panel.click(this.hide);
   $close_btn.click(this.hide);
-  $(window).bind("resize",resizeHandler);
+  $(window).bind("resize", resizeHandler);
   resizeHandler();
 
 };

@@ -28,7 +28,8 @@
   
 <body>
 
-  {% unless page.no_header %}
+  {% unless true %}
+    page.no_header
     <header class="container">
       <h2 class="dmitry"><a href="/">Dmitry Filimonov</a></h2>
       <p class="gray-color">I like creating stuff for the Web. Read <a href="/about">more about me</a> and check out <a href="/projects">my projects</a>.</p>
@@ -43,7 +44,7 @@
 
   {% unless page.no_footer %}
     <footer class="container">
-      <p class="copyright gray-color align-center">Copyright © 2012–2013 <a class="gray-color" href="/about">Dmitry Filimonov</a></p>
+      <p class="copyright gray-color align-center">Copyright © 2012–2013 <a class="gray-color" href="/">Dmitry Filimonov</a></p>
     </footer>
   {% endunless %}
 
@@ -68,7 +69,10 @@
       })();
     }
   </script>
-
+  
+  {% unless page.no_home_btn %}
+    <a href='/' class="home"></a>
+  {% endunless %}
 </body>
 
 </html>

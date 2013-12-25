@@ -1,20 +1,25 @@
 @import mixins.sass
 @import resume.sass
 
-$header-k: 0.85
+$header-k: 1
 =header-font
   font: 500 15px/1.3 "rooney-web", Times, "Times New Roman", serif
+=header-font
+  font: 700 22px/1.3 "freight-text-pro", Times, "Times New Roman", serif
+  letter-spacing: 0.5px
 =body-font
-  font: 300 18px/1.8 "rooney-web", Times, "Times New Roman", serif
+  font: 300 19px/1.7 "rooney-web", Times, "Times New Roman", serif
+  letter-spacing: 0.1px
+// =body-font
+//   font: 400 21px/1.7 "adobe-text-pro", Times, "Times New Roman", serif
+//   letter-spacing: 0.1px
+//   $header-k: 0.9
+//   font-weight: 500
 =monospace-font
   font: 400 15px/1.4 Consolas, "Liberation Mono", Courier, monospace
 strong
   font-weight: 500
 
-
-
-strong
-  font-weight: 500
 
 a
   color: $links
@@ -109,8 +114,8 @@ pre, code, tt
   +monospace-font
 
 .highlight, code
-  border: 1px solid #ddd
-  background: #f4f4f4
+  border: 1px solid #eee
+  background: #fafafa
 
 .highlight
   overflow: auto
@@ -145,11 +150,9 @@ code
  * Other
  */
 .article-body 
-  *:first-child
+  >*:first-child
     margin-top: 0 !important
-
-.article-body 
-  *:last-child
+  >*:last-child
     margin-bottom: 0 !important
 
 
@@ -207,6 +210,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
 /**
  * Usefull utility classes
  */
+.clearfix,
 .clear-fix
   clear: both
 
@@ -235,25 +239,29 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
 /**
  * Header
  */
-header
-  .dmitry
-    a
-      &,&:hover,&:active,&:visited
-        text-decoration: none
-        color: $text-color
-      &:hover
-        color: $main-color
+.dmitry
+  a
+    &,&:hover,&:active,&:visited
+      text-decoration: none
+      color: $text-color
+    &:hover
+      color: $main-color
 
-  .border
-    background: transparent
-    height: 0
-    border-bottom: 1px dashed black
+.border
+  background: transparent
+  height: 0
+  border-bottom: 1px dashed black
 
 
 
 /**
  * Index Page
  */
+.about-index
+  img
+    width: 300px
+    float: left
+
 .articles
   display: block
   margin: 0 auto
@@ -263,7 +271,7 @@ header
     a
       display: block
       .title, .date-wrapper
-        font-size: 1.7em
+        font-size: 1.5em
         display: inline-block
         vertical-align: top
         height: 100%
@@ -274,7 +282,7 @@ header
         width: 15%
         text-align: right
       .date
-        font-size: (1 / 1.7) * 1em
+        font-size: (1 / 1.5) * 1em
       
       &
         color: $text-color
@@ -337,6 +345,24 @@ header
         color: darken(#dc4a36, 20%)
 
 
+/**
+ * Home button
+ */
+.home
+  position: fixed
+  top: 8px
+  left: 8px
+  width: 44px
+  height: 44px
+  background-color: white
+  background-image: url(/assets/home.png)
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+  .home
+    background-image: url(/assets/home@2x.png)
+    background-size: 100%
+
+
 
 /**
  * Space between different parts of the page
@@ -348,9 +374,11 @@ header
 .border
   margin-top: 40px
 section
-  margin-top: 40px
+  margin-top: 40px * 2.5
+.articles
+  margin-top: 20px
 .article-title
-  margin: 0 auto 20px
+  margin: 40px auto 20px
 .article-date
   margin-bottom: 40px
 .article-body
@@ -358,10 +386,7 @@ section
 .navigation
   margin-bottom: 40px
 footer
-  margin: (40px * 3) auto (40px * 1)
-
-
-
+  margin: (40px * 2) auto (40px * 1)
 
 
 
