@@ -10,12 +10,7 @@ tags:
 <div class='gif-wrapper' style="width: 708px; height: 537px; margin: 0 auto; background:url(/assets/images/browser-background.png) no-repeat; position: relative;">
   <img class='gif' style="width: 606px; height: 434px; margin: 0; position: absolute; top: 29px; left: 50px; border-radius: 0 0 2px 2px; overflow:hidden;" src="/assets/images/cat-demo.gif" />
 </div>
-<!--
-### Important Update!
 
-If you're on Mac, you can now use this thing *without Node.js backend*. It connects right to your system's terminal and it's awesome! If you're on some other unix-compatible system, please, [help me port it](https://github.com/petethepig/devtools-terminal/tree/master/native-src).
-
--->
 #### How do I install it?
 
 *If you're on a Mac*, just download this [Chrome extension](https://chrome.google.com/webstore/detail/leakmhneaibbdapdoienlkifomjceknl). Install it, and you good to go.
