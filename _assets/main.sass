@@ -149,7 +149,7 @@ code
 /**
  * Other
  */
-.article-body 
+.article-body
   >*:first-child
     margin-top: 0 !important
   >*:last-child
@@ -227,9 +227,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
   text-overflow: ellipsis
 
 .df
-  background-image: url(/assets/apple-touch-icon-72x72-precomposed.png) 
+  background-image: url(/assets/apple-touch-icon-72x72-precomposed.png)
   background-size: 100%
-  width: 36px  
+  width: 36px
   height: 36px
   margin: 40px auto
 
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
         text-align: right
       .date
         font-size: (1 / 1.5) * 1em
-      
+
       &
         color: $text-color
       &:visited
@@ -343,6 +343,25 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
       color: #dc4a36
       &:hover
         color: darken(#dc4a36, 20%)
+
+$dur: 0.33s
+$ease: cubic-bezier(0.250, 0.250, 0.605, 1.650)
+$ease: cubic-bezier(0.140, 0.380, 0.330, 1.535)
+.social-buttons.share-buttons
+  margin-bottom: -73px
+  .social-button
+    transition: all $dur $ease
+    -webkit-transition: all $dur $ease
+    transform: scale(0)
+    -webkit-transform: scale(0)
+    &:nth-child(2)
+      color: #3c599b
+      &:hover
+        color: darken(#3c599b, 20%)
+  &.show
+    .social-button
+      transform: scale(1)
+      -webkit-transform: scale(1)
 
 
 /**
@@ -416,7 +435,7 @@ body
     padding: 1px 0
     height: 24px
     line-height: 24px
-    color: inherit  
+    color: inherit
     text-align: center
     text-decoration: none
     font-family: 'Cabin Condensed', sans-serif

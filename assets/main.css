@@ -394,6 +394,21 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
       .social-buttons .social-button:nth-child(3):hover {
         color: #92281a; }
 
+.social-buttons.share-buttons {
+  margin-bottom: -73px; }
+  .social-buttons.share-buttons .social-button {
+    transition: all 0.33s cubic-bezier(0.14, 0.38, 0.33, 1.535);
+    -webkit-transition: all 0.33s cubic-bezier(0.14, 0.38, 0.33, 1.535);
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+    .social-buttons.share-buttons .social-button:nth-child(2) {
+      color: #3c599b; }
+      .social-buttons.share-buttons .social-button:nth-child(2):hover {
+        color: #202f51; }
+  .social-buttons.share-buttons.show .social-button {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+
 /*
  * Home button
  */

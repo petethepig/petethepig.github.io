@@ -1,3 +1,39 @@
+var SocialButtons = function($el) {
+  return $el.find(".social-button").click(function(e) {
+    var desc, features, height, left, outerHeight, outerWidth, screenX, screenY, top, url, width;
+    e.preventDefault();
+    url = document.location.href;
+    width = 600;
+    height = 270;
+    desc = document.title;
+    switch ($(this).data("social")) {
+      case "twitter":
+        url = "https://twitter.com/intent/tweet?status=" + desc + " " + url;
+        break;
+      case "facebook":
+        url = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+        break;
+      case "google-plus":
+        width = 500;
+        height = 450;
+        url = "https://plus.google.com/share?url=" + url;
+    }
+    screenX = (typeof window.screenX !== "undefined" ? window.screenX : window.screenLeft);
+    screenY = (typeof window.screenY !== "undefined" ? window.screenY : window.screenTop);
+    outerWidth = (typeof window.outerWidth !== "undefined" ? window.outerWidth : document.body.clientWidth);
+    outerHeight = (typeof window.outerHeight !== "undefined" ? window.outerHeight : document.body.clientHeight - 22);
+    left = parseInt(screenX + ((outerWidth - width) / 2), 10);
+    top = parseInt(screenY + ((outerHeight - height) / 2.5), 10);
+    features = "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top;
+    if (!window.from_webview) {
+      return window.open(url, "share-window", features);
+    } else {
+      return $(document.body).append($("<img style='top:-100px;left:-100px;width:50px;height:50px;position:absolute;' src='js-call:openPopup:" + url + "' />"));
+    }
+  });
+};
+
+
 var Modal = function(){
 
   var $content = $(".modal-content");
@@ -94,4 +130,18 @@ $(document).ready(function(){
       }
     });
   });
+
+  function updateShareButtons(){
+    var show = $('.share-buttons').offset().top - $(window).scrollTop() - $(window).height() + $('.share-buttons').height() < 0;
+    show && setTimeout(function(){
+      $('.share-buttons').addClass('show');
+    }, 2500);
+  }
+
+  $(window).resize(updateShareButtons).scroll(updateShareButtons).resize();
+
+  SocialButtons($('.share-buttons'));
+
 });
+
+
