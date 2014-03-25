@@ -24,7 +24,7 @@ Boom. This was the epiphany moment. When my friend told me that someone's willin
 
 It happens to many of us, especially to those who's trying to start a business on their own, when you don't have anyone to count on but yourself. You start a project, you work hard and you love it. But as the time goes by, you have to spend more and more time motivating yourself. And the whole process slows down. And your project dies. It happened to 90% of all my projects.
 
-Now I know at least one way of dealing with it — find someone sho's willing to pay.
+Now I know at least one way of dealing with it — find someone who's willing to pay.
 
 
 
