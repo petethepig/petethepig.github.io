@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automating fonts to webfonts conversion process"
+title:  "Automating webfonts conversion process"
 date:   2014-06-20 17:06
 tags:
 - programming
@@ -86,7 +86,7 @@ marmot -dc ./web/config/font-config.json ./design/icons-Regular.otf output.zip \
 {% endhighlight %}
 and that's it. Automating at it's best.
 
-So, I hope now you're convinced now. Go star [Marmot on Github](https://github.com/petethepig/marmot).
+So, I hope now you're convinced. Go star [Marmot on Github](https://github.com/petethepig/marmot).
 
 
 Peace.
