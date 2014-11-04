@@ -8,9 +8,7 @@ tags:
 - design
 ---
 
-[![1x1px.me logo][2]][1]
-[1]: http://1x1px.me
-[2]: http://g.dfilimonov.com/c4dfb102.png (Go check it out)
+[![1x1px.me logo](http://g.dfilimonov.com/c4dfb102.png)](http://1x1px.me)
 
 Have you ever tried to make a transparent background in IE8? If you have, I am pretty sure you know that there is no `rgba()` support. One of the common tricks is putting a 1x1 transparent PNG image on background. Opening Photoshop every time I need this pixel is lame, so I made a small one-page app that do it just fine. Go check it out: [1x1px](http://1x1px.me). It is free.
 
