@@ -14,8 +14,6 @@ title: Projects
 
 [ ![Thunder](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/PZNdBzoSZ7w/Screenshot%2025%20Dec%202013%2008%3A38%3A04.png) ](https://thunderapp.me/)
 
-<!-- ![FeatureBox](/assets/featurebox.png) -->
-
 &nbsp;
 
 [ ![GitHub Markup Preview](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/W38do5hlSTQ/Screenshot%2025%20Dec%202013%2008%3A38%3A47.png) ](http://dfilimonov.com/github-markup-preview)
@@ -26,8 +24,8 @@ title: Projects
 
 <div style="height:50px;">&nbsp;</div>
 
-####Couple more
+#### Couple more
 
 * This website ([GitHub](https://github.com/petethepig/petethepig.github.io))
-* Devtools Terminal ([GitHub](https://github.com/petethepig/devtools-terminal))
 * Marmot — Unofficial Font Squirrel Webfont Generator Client ([GitHub](https://github.com/petethepig/marmot))
+* Statsd Manager — GUI for [statsd admin interface](https://github.com/etsy/statsd/blob/master/docs/admin_interface.md). ([GitHub](https://github.com/petethepig/statsd-manager))

@@ -53,7 +53,7 @@
     overflow-wrap: hyphenate;
     word-wrap: break-word;
     -webkit-hyphens: auto;
-    -webkit-hyphenate-character: "\2010";
+    -webkit-hyphenate-character: "‐";
     -webkit-hyphenate-limit-after: 1;
     -webkit-hyphenate-limit-before: 3; }
   .resume .top-right {
@@ -72,7 +72,6 @@
 @media print {
   @page {
     margin: 15mm 25mm 0 25mm; }
-
   .resume {
     padding-bottom: 0; }
 
@@ -137,7 +136,7 @@ code {
 
 body.black, body.black header .dmitry a:visited {
   background: #222222;
-  color: #eeeeee; }
+  color: #eee; }
 
 li {
   list-style: square; }
@@ -192,14 +191,14 @@ img {
   margin: 0 auto;
   max-width: 100%; }
 
-/*
+/**
  * Source Code
  */
 pre, code, tt {
   font: 400 15px/1.4 Consolas, "Liberation Mono", Courier, monospace; }
 
 .highlight, code {
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   background: #fafafa; }
 
 .highlight {
@@ -229,7 +228,7 @@ code {
   border-radius: 3px;
   padding: 2px 5px; }
 
-/*
+/**
  * Other
  */
 .article-body > *:first-child {
@@ -239,13 +238,13 @@ code {
 
 ::selection {
   background: #111111;
-  color: white; }
+  color: #ffffff; }
 
 ::-moz-selection {
   background: #111111;
-  color: white; }
+  color: #ffffff; }
 
-/*
+/**
  * Entypo Font
  */
 @font-face {
@@ -254,15 +253,13 @@ code {
   src: url("./entypo/entypo-webfont.eot?#iefix") format("embedded-opentype"), url("./entypo/entypo-webfont.woff") format("woff"), url("./entypo/entypo-webfont.ttf") format("truetype"), url("./entypo/entypo-webfont.svg#entyporegular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: "entypo_socialregular";
   src: url("./entypo-social/entypo-social-webfont.eot");
   src: url("./entypo-social/entypo-social-webfont.eot?#iefix") format("embedded-opentype"), url("./entypo-social/entypo-social-webfont.woff") format("woff"), url("./entypo-social/entypo-social-webfont.ttf") format("truetype"), url("./entypo-social/entypo-social-webfont.svg#entypo_socialregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-/*
+/**
  * Layout
  */
 h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
@@ -272,7 +269,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
   margin-left: auto;
   margin-right: auto; }
 
-/*
+/**
  * Usefull utility classes
  */
 .clearfix,
@@ -298,7 +295,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
   height: 36px;
   margin: 40px auto; }
 
-/*
+/**
  * Header
  */
 .dmitry a, .dmitry a:hover, .dmitry a:active, .dmitry a:visited {
@@ -312,7 +309,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
   height: 0;
   border-bottom: 1px dashed black; }
 
-/*
+/**
  * Index Page
  */
 .about-index img {
@@ -351,7 +348,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
         .articles .article a:hover .date, .articles .article a:active .date {
           text-decoration: none; }
 
-/*
+/**
  * Next-post, previous-post links
  */
 .navigation .next-post, .navigation .prev-post {
@@ -364,7 +361,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
 .navigation .prev-post {
   float: left; }
 
-/*
+/**
  * Social Buttons on the About page
  */
 .social-buttons {
@@ -409,7 +406,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
     transform: scale(1);
     -webkit-transform: scale(1); }
 
-/*
+/**
  * Home button
  */
 .home {
@@ -425,7 +422,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
   .home {
     background-image: url(/assets/home@2x.png);
     background-size: 100%; } }
-/*
+/**
  * Space between different parts of the page
  */
 header {
@@ -466,7 +463,7 @@ body {
   top: 42px;
   width: 200px;
   padding: 1px 0;
-  background: black;
+  background: #000;
   right: -42px;
   background: #ff4466;
   color: white;
@@ -504,7 +501,7 @@ body {
     position: static !important;
     margin: 0 auto !important;
     max-width: 608px !important; } }
-/*
+/**
  * Import everything else
  */
 @media (max-width: 908.33333px) {
@@ -707,15 +704,15 @@ body {
 
 /* Literal.Number */
 .highlight .s {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String */
 .highlight .na {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #0086b3; }
+  color: #0086B3; }
 
 /* Name.Builtin */
 .highlight .nc {
@@ -724,11 +721,11 @@ body {
 
 /* Name.Class */
 .highlight .no {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Constant */
 .highlight .ni {
-  color: purple; }
+  color: #800080; }
 
 /* Name.Entity */
 .highlight .ne {
@@ -746,11 +743,11 @@ body {
 
 /* Name.Namespace */
 .highlight .nt {
-  color: navy; }
+  color: #000080; }
 
 /* Name.Tag */
 .highlight .nv {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable */
 .highlight .ow {
@@ -778,35 +775,35 @@ body {
 
 /* Literal.Number.Oct */
 .highlight .sb {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Backtick */
 .highlight .sc {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Char */
 .highlight .sd {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Doc */
 .highlight .s2 {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Double */
 .highlight .se {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Escape */
 .highlight .sh {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Heredoc */
 .highlight .si {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Interpol */
 .highlight .sx {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Other */
 .highlight .sr {
@@ -814,7 +811,7 @@ body {
 
 /* Literal.String.Regex */
 .highlight .s1 {
-  color: #dd1144; }
+  color: #d14; }
 
 /* Literal.String.Single */
 .highlight .ss {
@@ -826,15 +823,15 @@ body {
 
 /* Name.Builtin.Pseudo */
 .highlight .vc {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Class */
 .highlight .vg {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Global */
 .highlight .vi {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Instance */
 .highlight .il {
@@ -896,7 +893,7 @@ body {
     height: 40px;
     line-height: 40px;
     text-align: right;
-    color: #333333;
+    color: #333;
     cursor: pointer;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 26px;
@@ -908,3 +905,5 @@ body {
   .modal-containter .modal-content img {
     width: 100%;
     height: 100%; }
+
+/*# sourceMappingURL=main.css.map */

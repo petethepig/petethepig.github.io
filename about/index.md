@@ -13,7 +13,7 @@ title: About
 </p>
 
 
-I'm originally from St Petersburg, Russia but now I live in San Francisco. My passion is programming, especially web-related. I like creating stuff and learning new things. Check out my recent [projects](/projects).
+I'm originally from St Petersburg, Russia but now I live in San Francisco. I'm a software engineer at [Sensor Tower](). I like web and devops. I like creating stuff and learning new things. Check out my recent [projects](/projects).
 
 You can reach me on [GitHub](https://github.com/petethepig), [Twitter](https://twitter.com/dmi3f) or [Google +](https://plus.google.com/115336993797323707321). My email is [@]([me-email]) – drop me a line sometime.
 
