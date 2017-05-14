@@ -16,6 +16,7 @@ render_emoji ( 'Teddy :bеar:', { :style => 'width:20px;height:auto;' } )
 #Teddy <img src='/assets/emojis/bear.png' style='width:20px;height:auto;' /> 
 {% endhighlight %}
 
-#####Credits
+##### Credits
+
 I borrowed the images from this [emoji-cheat-sheet](http://www.emoji-cheat-sheet.com/) website.
 
