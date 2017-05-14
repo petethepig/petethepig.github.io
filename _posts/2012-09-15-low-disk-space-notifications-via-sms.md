@@ -8,6 +8,8 @@ tags:
 - sms
 ---
 
+> This article is from 2012. If I were you I would look at other solutions.
+
 Yesterday I've noticed that my server was running out of space. Turned out, nginx log wasn't rotating, so it filled the whole drive. Today, I started my day figuring out, what kind of precautions i can take to eliminate such things. The most obvious way for me is sending a SMS message to my phone every time the available disk space running low. So I found this website, [sms.ru](http://sms.ru) – they provide very simple API and it is free of charge, if you 1) send messages only to yourself, 2) send not more than 60 messages per day.
 
 Take a look at the code from this [gist](https://gist.github.com/3727908). Easy, right? 
