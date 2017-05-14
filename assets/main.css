@@ -99,7 +99,7 @@
   a.no-brackets:link:after, a.no-brackets:visited:after {
     content: " " attr(href) " "; } }
 strong {
-  font-weight: 500; }
+  font-weight: 800; }
 
 a {
   color: #ff4466;
@@ -115,16 +115,16 @@ a {
     color: #aa001f; }
 
 body {
-  font: 300 19px/1.7 "rooney-web", Times, "Times New Roman", serif;
+  font: 400 19px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 0.1px; }
 
-html, body, div, ul, li, img {
+html, body, div, ul, li, img, figure {
   padding: 0;
   margin: 0;
   border: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font: 700 22px/1.3 "freight-text-pro", Times, "Times New Roman", serif;
+  font: 800 22px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 0.5px; }
 
 html, body {
@@ -330,10 +330,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, hr, blockquote, .navigation,
         vertical-align: top;
         height: 100%; }
       .articles .article a .title {
-        width: 85%;
+        width: 80%;
         margin: 0 0 0.75em; }
       .articles .article a .date-wrapper {
-        width: 15%;
+        width: 20%;
         text-align: right; }
       .articles .article a .date {
         font-size: 0.66667em; }

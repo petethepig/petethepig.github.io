@@ -1,6 +1,6 @@
 name: Dmitrii Filimonov's Blog
-pygments: true
-exclude: 
+highlighter: rouge
+exclude:
 - deploy.sh
 - preview.sh
 - Gemfile
