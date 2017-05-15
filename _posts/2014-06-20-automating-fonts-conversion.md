@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automating webfonts conversion process"
+title:  "Automating webfonts conversion"
 date:   2014-06-20 17:06
 tags:
 - programming
