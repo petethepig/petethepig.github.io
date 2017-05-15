@@ -30,7 +30,8 @@ Do What the Fuck You Want to Public License.
 Please, let me know if you have any problems or I made a mistake somewhere.
 
 
-####In case you've missed the first link
+#### In case you've missed the first link
+
 Download Mac App Icon Template [here] [1].
 
   [1]: http://thdr.me/f19zeQvX3NjY

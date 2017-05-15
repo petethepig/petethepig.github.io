@@ -46,7 +46,7 @@ function handleWheel(event) {
 
 AS3. Imports:
 
-{% highlight actionscript %}
+{% highlight flash %}
 import flash.display.*;
 import flash.events.MouseEvent;
 import flash.external.ExternalInterface;
@@ -55,7 +55,7 @@ import flash.geom.Point;
 
 AS3. Add this code to your documentClass constructor:
 
-{% highlight actionscript %}
+{% highlight flash %}
 ExternalInterface.addCallback("handleWheel", function(event:Object){
     var obj : InteractiveObject = null;
     var mousePoint : Point = new Point(stage.mouseX, stage.mouseY);
