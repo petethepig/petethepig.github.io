@@ -27,26 +27,15 @@
 
 <body>
 
-  {% unless true %}
-    page.no_header
-    <header class="container">
-      <h2 class="dmitry"><a href="/">Dmitry Filimonov</a></h2>
-      <p class="gray-color">I like building things. Read <a href="/about">more about me</a> and check out <a href="/projects">my projects</a>.</p>
-      <hr class='border'></hr>
-    </header>
-  {% endunless %}
-
   <section class="container {{ page.section_class }} ">
     {{ content }}
   </section>
-
 
   {% unless page.no_footer %}
     <footer class="container">
       <p class="copyright gray-color align-center">Copyright © 2012&thinsp;–&thinsp;2019 <a class="gray-color" href="/">Dmitry Filimonov</a></p>
     </footer>
   {% endunless %}
-
 
   <div class='modal-background'></div>
   <div class='modal-containter'>
