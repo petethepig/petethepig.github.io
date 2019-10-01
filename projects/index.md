@@ -9,15 +9,15 @@ section_class: projects
 </center>
 ---
 
-[ ![Devtools Terminal](/assets/images/projects-terminal.png) ](https://thunderapp.me/)
+[ ![string.art.bird instagram](/assets/images/projects-string-art-bird.jpg) ](https://www.instagram.com/string.art.bird/)
 
 &nbsp;
 
-[ ![Thunder](/assets/images/projects-thunder.png) ](https://thunderapp.me/)
+[ ![Devtools Terminal](/assets/images/projects-terminal.png) ](/2013/09/12/devtools-terminal.html)
 
 &nbsp;
 
-[ ![GitHub Markup Preview](/assets/images/projects-markup.png) ](http://dfilimonov.com/github-markup-preview)
+![Thunder App](/assets/images/projects-thunder.png) ]
 
 &nbsp;
 
