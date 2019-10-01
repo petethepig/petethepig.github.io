@@ -13,6 +13,10 @@ section_class: projects
 
 &nbsp;
 
+[ ![OpenBuilds ACRO Z Axis](/assets/images/projects-acro.jpg) ](https://openbuilds.com/builds/openbuilds-acro-z-axis.8595/)
+
+&nbsp;
+
 [ ![Devtools Terminal](/assets/images/projects-terminal.png) ](/2013/09/12/devtools-terminal.html)
 
 &nbsp;
