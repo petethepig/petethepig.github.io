@@ -17,7 +17,7 @@ section_class: projects
 
 &nbsp;
 
-![Thunder App](/assets/images/projects-thunder.png) ]
+![Thunder App](/assets/images/projects-thunder.png)
 
 &nbsp;
 
