@@ -23,7 +23,7 @@ Check out [Apple's Icon Design Guidelines](https://developer.apple.com/library/m
 
 #### License?
 
-Do What the Fuck You Want to Public License. 
+This work is of paramount importance to the whole world out there, so I had no choice but to release as public domain.
 
 #### Feedback
 
