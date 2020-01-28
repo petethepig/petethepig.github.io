@@ -7,13 +7,9 @@ tags:
 - fonts
 ---
 
+Have you ever thought of automating the process of converting regular fonts to webfonts?
 
-
-
-
-Have you ever thouhgt of automating the process of converting regular fonts to webfonts? If the answer is yes, or you just curious now, go ahead, read this post.
-
-I build a simple command line client for the popular Font Squirrel font-face generator. I called it Marmot, and here's what it can do:
+Just for you I build a simple command line client for the popular Font Squirrel font-face generator. I called it Marmot, and here's what it can do:
 
 
 {% highlight bash  %}
@@ -66,30 +62,4 @@ Here's what you gonna get:
 ![screenshot](https://s3-eu-west-1.amazonaws.com/eu.thdr.me/tClknv9wKwI/8451de8b72899d6e8a4e18366c3d1d5a.png)
 
 
-### Okay, but why do need this?
-
-
-In 99% of the cases, it's easier to just go to Font Squirrel convert you fonts and forget about it.
-
-
-### Then why the hell did you make me read all of that?
-
-
-I was making an icon font the other day (popular thing nowadays, huh?) and every time I added a new icon I had to convert the font. And I felt like automating this process is a good idea so I wrote Marmot.
-
-Now I just run a script like this:
-
-{% highlight bash %}
-rm -r ./web/app/assets/fonts/icons
-marmot -dc ./web/config/font-config.json ./design/icons-Regular.otf output.zip \
-  && unzip output.zip -d ./web/app/assets/fonts/icons
-{% endhighlight %}
-and that's it. Automating at it's best.
-
-So, I hope now you're convinced. Go star [Marmot on Github](https://github.com/petethepig/marmot).
-
-
-Peace.
-
-
-
+So, I hope you like it. Go star [Marmot on Github](https://github.com/petethepig/marmot).
