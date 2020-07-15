@@ -12,9 +12,9 @@ title: About
 
 I'm originally from St Petersburg, Russia, now living in Oakland, CA. I'm an Engineering&nbsp;Team&nbsp;Lead at [Sensor&nbsp;Tower](https://sensortower.com/).
 
-My favorite areas of software engineering are distributed systems, networking and devops. I like building things. Check out my [projects](/projects).
+My favorite areas of software engineering are distributed systems, performance analysis, monitoring, networking. I like building things. Check out my [projects](/projects).
 
-You can reach me on [GitHub](https://github.com/petethepig). My email is [@]([me-email]) — drop me a line sometime.
+My email is [@]([me-email]) — drop me a line sometime.
 
 <p class="social-buttons">
   <a class="social-button" href="https://twitter.com/dmi3f"></a>
