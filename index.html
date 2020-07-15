@@ -4,14 +4,14 @@ no_home_btn: true
 ---
 <div class="about-index">
   <h1>Hi, I'm Dmitry</h1>
-  <p>I like building things. Read <a href="/about">more&nbsp;about&nbsp;me</a> and check&nbsp;out <a href="/projects">my&nbsp;projects</a>.</p>
+  <p>I write about distributed systems and I like building things. Read <a href="/about">more&nbsp;about&nbsp;me</a>.</p>
   <div class="clearfix"></div>
 </div>
 <h2 class="article-title latest-posts" >Latest Posts:</h2>
 <ul class="articles" >
   {% for post in site.posts %}
   <li class="article" >
-    <a href="{{ post.url }}"> 
+    <a href="{{ post.url }}">
       <span class="title text-overflow-ellipsis">{{ post.title }}</span><span class="date-wrapper"><span class="date">{{ post.date | date_to_string }}</span></span>
     </a>
   </li>
