@@ -43,5 +43,5 @@ Streaming technology is free from these problems. There's no back-and-forth — 
 ---
 
 
-I could see a future in which Mightly becomes a client for a network of Mighty-enabled websites where instead of a HTTPS loadbalancer you put a video-streaming (Mighty?) server in front of your backend. How's that for a *crazy* idea?
+I could see a future in which Mightly becomes a client for a network of Mighty-enabled websites where instead of an HTTPS loadbalancer you put a video-streaming (Mighty?) server in front of your backend. How's that for a *crazy* idea?
 
