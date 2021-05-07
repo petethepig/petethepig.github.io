@@ -8,7 +8,7 @@ var SocialButtons = function($el) {
     desc = document.title;
     switch ($(this).data("social")) {
       case "twitter":
-        url = "https://twitter.com/intent/tweet?status=" + desc + " " + url;
+        window.open('https://twitter.com/dmi3f');
         break;
       case "facebook":
         url = "https://www.facebook.com/sharer/sharer.php?u=" + url;
