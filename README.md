@@ -1,3 +1,3 @@
 # My Blog
 
-Available at [http://blog.dfilimonov.com/](http://blog.dfilimonov.com/)
+Available at [https://blog.dfilimonov.com/](https://blog.dfilimonov.com/)
